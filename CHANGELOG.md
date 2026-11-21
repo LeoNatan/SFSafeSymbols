@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Add symbol preview in Xcode Quick Help (By [Phineas Guo](https://github.com/guoPhineas))
 - Add `make pr` for contributors, which detects the username and branch from git (By [Steven Sorial](https://github.com/StevenSorial))
+- Add SF Symbols 8.3 (iOS 27.3, macOS 27.3, tvOS 27.3, watchOS 27.3, visionOS 27.3) (By [Léo Natan](https://github.com/LeoNatan))
+- Add the optional `SFSafeSymbolsPrivate` product, which exposes the system's private symbols as `SFPrivateSymbol`, with `privateSystemSymbol` initializers for `Image`, `Label`, `Button`, `UIImage` and `NSImage` (By [Léo Natan](https://github.com/LeoNatan))
 
 ### Changed
 
@@ -23,6 +25,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Fix to build by pre-Xcode 26.0 versions (By [Phineas Guo](https://github.com/guoPhineas))
 - Fix static localization (e.g. `SFSymbol.character.ar`) not being accessible outside the library (By [Steven Sorial](https://github.com/StevenSorial))
+- The symbols generator escapes all Swift keywords in property names, not only `return`, `repeat` and `case` (By [Léo Natan](https://github.com/LeoNatan))
 
 ## [7.0.0] - 2025-10-26
 

@@ -6,6 +6,7 @@ class GeneratorCore {
     private let outputDir: URL
     private let imagesDir: URL
     private let mode: GenerationMode
+    private let catalog: SymbolCatalog
     private var symbols: [Symbol] = []
     private var symbolsByName: [String: Symbol] = [:]
     private var versionsWithNoLayersetInfo: Set<String> = []
@@ -17,10 +18,23 @@ class GeneratorCore {
     private static let baseAvailabilityAttribute = "@\(Availability.base.availableExpression)"
     private static let inlinableAttributes = ["@usableFromInline", "@_alwaysEmitIntoClient"]
 
-    init(outputDir: URL, mode: GenerationMode) {
+    init(outputDir: URL, mode: GenerationMode, catalog: SymbolCatalog) {
         self.outputDir = outputDir
         self.mode = mode
+        self.catalog = catalog
         self.imagesDir = outputDir.deletingLastPathComponent().appending(path: Self.imageDirectoryPath)
+    }
+
+    /// A generated file of the catalog's module: the notice not to edit it, the catalog's imports, then the code
+    /// `body` writes.
+    private func generatedFile(_ body: (inout SwiftWriter) -> Void) -> String {
+        SwiftWriter.generatedFile(indentationWidth: Self.indentationWidth) { writer in
+            if catalog.imports.isNotEmpty {
+                writer.lines(catalog.imports.map { "import \($0)" })
+                writer.blankLine()
+            }
+            body(&writer)
+        }
     }
 
     func run() async throws {
@@ -28,20 +42,28 @@ class GeneratorCore {
 
         guard
             case let (allSymbols, availabilities)? = try SystemSymbols
-                .read(file: "name_availability", withExtension: "plist")
+                .read(file: "name_availability", withExtension: "plist", of: catalog)
                 .parse(using: SymbolManifestParser.parse)
                 else {
-            fatalError("Error reading name_availability.plist")
+            fatalError("Error reading name_availability.plist of \(catalog.bundleName)")
         }
 
-        let symbolRestrictions = try SystemSymbols
-            .read(file: "symbol_restrictions", withExtension: "strings")
-            .parse(using: StringDictionaryFileParser.parse)
+        // The private catalog has no use restrictions
+        let symbolRestrictions = try SystemSymbols.exists(file: "symbol_restrictions", withExtension: "strings", of: catalog)
+            ? SystemSymbols
+                .read(file: "symbol_restrictions", withExtension: "strings", of: catalog)
+                .parse(using: StringDictionaryFileParser.parse)
+            : [:]
 
         let symbolCategories = try PropertyListDecoder().decode(
             [String: [String]].self,
-            from: SystemSymbols.read(file: "symbol_categories", withExtension: "plist")
+            from: SystemSymbols.read(file: "symbol_categories", withExtension: "plist", of: catalog)
         )
+
+        let allNameAliases = try SystemSymbols
+            .read(file: "name_aliases", withExtension: "strings", of: catalog)
+            .parse(using: StringDictionaryFileParser.parse)
+        let allSymbolNames = Set(allSymbols.map(\.name))
 
         // The SF Symbols app hides restricted devices with a badge or slash (e. g. `macpro.gen1.badge.checkmark`), which
         // are composite-only, but not other restricted composite-only symbols (e. g. `video.badge.questionmark`)
@@ -49,14 +71,19 @@ class GeneratorCore {
             symbolRestrictions[$0.name] == nil
             || symbolCategories[$0.name]?.contains("devices") != true
             || !SystemSymbols.isCompositeOnly($0.name)
+        }.filter {
+            // Placeholder names of unreleased symbols, e. g. `0828E54B965E418AB42353CA91BFBBEE.fill`, which aren't
+            // meaningful and may change any time
+            !Self.isPlaceholderName($0.name)
+            // Names that were renamed to symbols of another catalog, e. g. the private `arrowtriangle.summary` that is
+            // now the public `text.line.2.summary`. The system doesn't resolve them in this catalog.
+            && allNameAliases[$0.name].map(allSymbolNames.contains) != false
         }
 
         let scannedSymbolForName = Dictionary(symbolManifest.map { ($0.name, $0) }) { first, _ in first }
 
         // Renames whose old name was public. The others are names used internally before a symbol's release.
-        let nameAliases = try SystemSymbols
-            .read(file: "name_aliases", withExtension: "strings")
-            .parse(using: StringDictionaryFileParser.parse)
+        let nameAliases = allNameAliases
             .map({ (oldName: $0.key, newName: $0.value) })
             .filter { scannedSymbolForName[$0.oldName] != nil }
 
@@ -170,18 +197,22 @@ class GeneratorCore {
 
         var files: [String: String] = [:]
         for (availability, symbols) in groupedSymbols {
-            files["SFSymbol+\(availability.version).swift"] = symbolsFile(availability, symbols)
+            files["\(catalog.filePrefix)+\(availability.version).swift"] = symbolsFile(availability, symbols)
         }
         for (availability, symbolLocalizations) in localizationsGroupedByAvailability {
-            files["SFSymbol+AllSymbols+\(availability.version).swift"] = Self.catalogTablesFile(
+            files["\(catalog.filePrefix)+AllSymbols+\(availability.version).swift"] = catalogTablesFile(
                 availability,
                 symbolLocalizations,
-                deprecatedSymbols: groupedSymbols[availability]!.compactMap(\.olderSymbol?.name).sorted()
+                deprecatedSymbols: (groupedSymbols[availability] ?? []).compactMap(\.olderSymbol?.name).sorted()
             )
         }
-        files["SymbolLocalizations.swift"] = localizationsFile(availabilities: Set(groupedSymbols.keys))
-        files["SFSymbol+AllSymbols.swift"] = Self.catalogFile(
-            availabilities: groupedSymbols.keys.sorted(using: ComparableComparator(order: .reverse)).dropFirst()
+        files[catalog.localizationsFileName] = localizationsFile(availabilities: Set(groupedSymbols.keys))
+        if catalog.isPrivate {
+            files["PrivateSymbolWithLocalizations.swift"] = withLocalizationsFile()
+        }
+        // Every availability that introduced symbols or localizations has tables
+        files["\(catalog.filePrefix)+AllSymbols.swift"] = catalogFile(
+            availabilities: localizationsGroupedByAvailability.keys.sorted(using: ComparableComparator(order: .reverse)).dropFirst()
         )
 
         // MARK: - Step 4: OUTPUT
@@ -193,10 +224,10 @@ class GeneratorCore {
         print("Codes generated.")
         print("Generating symbol images...")
 
-        try await withThrowingTaskGroup(of: Void.self) {[symbols, imagesDir] group in
+        try await withThrowingTaskGroup(of: Void.self) {[symbols, imagesDir, catalog] group in
             for symbol in symbols {
                 group.addTask {
-                    try await Self.symbolToPNG(symbol, imagesDir: imagesDir)
+                    try await Self.symbolToPNG(symbol, catalog: catalog, imagesDir: imagesDir)
                 }
             }
             try await group.waitForAll()
@@ -215,10 +246,10 @@ class GeneratorCore {
 
     /// `SFSymbol+<version>.swift`: the static getters of the symbols introduced in `availability`.
     private func symbolsFile(_ availability: Availability, _ symbols: [Symbol]) -> String {
-        SwiftWriter.generatedFile(indentationWidth: Self.indentationWidth) { writer in
+        generatedFile { writer in
             writer.line("// \(availability.version) Symbols")
             writer.line("@\(availability.availableExpression)")
-            writer.scope("public extension SFSymbol") { writer in
+            writer.scope("public extension \(catalog.typeName)") { writer in
                 writer.separated(symbols) { writer, symbol in
                     writeGetter(of: symbol, to: &writer)
                 }
@@ -228,31 +259,31 @@ class GeneratorCore {
 
     /// `SFSymbol+AllSymbols+<version>.swift`: the symbols and localizations introduced in `availability`, and the
     /// symbols it deprecates.
-    private static func catalogTablesFile(
+    private func catalogTablesFile(
         _ availability: Availability,
         _ symbolLocalizations: [Symbol: Set<Localization>],
         deprecatedSymbols: [String]
     ) -> String {
-        SwiftWriter.generatedFile(indentationWidth: Self.indentationWidth) { writer in
+        generatedFile { writer in
             writer.line("@\(availability.availableExpression)")
-            writer.scope("extension SFSymbol") { writer in
-                writer.lines(inlinableAttributes)
-                writer.scope("internal static var localizationsAvailableSince\(availability.versionUnderscored): [SFSymbol : Set<Localization>]") { writer in
+            writer.scope("extension \(catalog.typeName)") { writer in
+                writer.lines(Self.inlinableAttributes)
+                writer.scope("internal static var localizationsAvailableSince\(availability.versionUnderscored): [\(catalog.typeName) : Set<Localization>]") { writer in
                     let entries = symbolLocalizations
                         .sorted(using: KeyPathComparator(\.key.name))
                         .map { symbol, localizations in
                             let localizationSet = localizations.map { "." + $0.variableName }.sorted().joined(separator: ", ")
-                            return (rawValueExpression(symbol.name) + ": [" + localizationSet + "]", symbol.propertyName)
+                            return (Self.rawValueExpression(symbol.name) + ": [" + localizationSet + "]", symbol.propertyName)
                         }
-                    writer.scope(bracket: .square) { $0.lines(tableEntries(entries)) }
+                    writer.scope(bracket: .square) { $0.lines(self.tableEntries(entries)) }
                 }
 
                 guard !availability.isBase else { return }
                 writer.blankLine()
-                writer.lines(inlinableAttributes)
-                writer.scope("internal static var symbolsDeprecatedSince\(availability.versionUnderscored): Set<SFSymbol>") { writer in
-                    let entries = deprecatedSymbols.map { (rawValueExpression($0), $0.toPropertyName) }
-                    writer.scope(bracket: .square, inline: entries.isEmpty) { $0.lines(tableEntries(entries)) }
+                writer.lines(Self.inlinableAttributes)
+                writer.scope("internal static var symbolsDeprecatedSince\(availability.versionUnderscored): Set<\(catalog.typeName)>") { writer in
+                    let entries = deprecatedSymbols.map { (Self.rawValueExpression($0), $0.toPropertyName) }
+                    writer.scope(bracket: .square, inline: entries.isEmpty) { $0.lines(self.tableEntries(entries)) }
                 }
             }
         }
@@ -264,22 +295,25 @@ class GeneratorCore {
         // Every localization exists in the base availability. Newer ones only where an older symbol gained them.
         var usedCombinations: [String: (Localization, Availability)] = [:]
         for localization in Localization.allCases {
-            usedCombinations[localization.structName(for: Availability.base)] = (localization, Availability.base)
+            usedCombinations[catalog.localizationTypeName(localization, for: Availability.base)] = (localization, Availability.base)
         }
         for symbol in symbols {
             for (availability, localizations) in symbol.availableLocalizations
                     where symbol.availability > availability && availabilities.contains(availability) {
                 for localization in localizations {
-                    usedCombinations[localization.structName(for: availability)] = (localization, availability)
+                    usedCombinations[catalog.localizationTypeName(localization, for: availability)] = (localization, availability)
                 }
             }
         }
 
-        return SwiftWriter.generatedFile(indentationWidth: Self.indentationWidth) { writer in
-            writer.scope("public enum Localization: String, Equatable, Sendable") { writer in
-                writer.lines(Localization.allCases.map { "case \($0.variableName) = \"\($0.rawValue)\"" })
+        return generatedFile { writer in
+            // The private catalog uses the enum of the public one
+            if !catalog.isPrivate {
+                writer.scope("public enum Localization: String, Equatable, Sendable") { writer in
+                    writer.lines(Localization.allCases.map { "case \($0.variableName) = \"\($0.rawValue)\"" })
+                }
+                writer.blankLine()
             }
-            writer.blankLine()
             writer.line("// MARK: - Static Localization")
             writer.blankLine()
 
@@ -287,16 +321,46 @@ class GeneratorCore {
                 let (structName, (localization, availability)) = entry
                 let rawValue = "\\(source.rawValue).\\(Localization.\(localization.variableName).rawValue)"
                 writer.line(Self.baseAvailabilityAttribute)
-                writer.scope("public struct \(structName): SymbolLocalization") { writer in
-                    writer.lines(["@usableFromInline", "let source: SFSymbol"])
+                writer.scope("public struct \(structName): \(catalog.localizationProtocolName)") { writer in
+                    writer.lines(["@usableFromInline", "let source: \(catalog.typeName)"])
                     writer.blankLine()
-                    writer.lines(["@_alwaysEmitIntoClient", "public init(source: SFSymbol) { self.source = source }"])
+                    writer.lines(["@_alwaysEmitIntoClient", "public init(source: \(catalog.typeName)) { self.source = source }"])
                     writer.blankLine()
                     writer.lines([
                         "@\(availability.availableExpression)",
                         "@_alwaysEmitIntoClient",
-                        "public var \(localization.variableName): SFSymbol { \(Self.rawValueExpression(rawValue)) }",
+                        "public var \(localization.variableName): \(catalog.typeName) { \(Self.rawValueExpression(rawValue)) }",
                     ])
+                }
+            }
+        }
+    }
+
+    /// `PrivateSymbolWithLocalizations.swift`: a subclass of the symbol type for each number of localizations that
+    /// symbols have, whose dynamic members are the localizations. `SFSafeSymbols` has hand-written ones.
+    private func withLocalizationsFile() -> String {
+        let maxCount = symbols.map { $0.availableLocalizations.values.joined().count }.max() ?? 0
+        let type = catalog.typeName
+        let protocolName = catalog.localizationProtocolName
+        return generatedFile { writer in
+            writer.line(Self.baseAvailabilityAttribute)
+            writer.scope("public protocol \(protocolName): Sendable") { writer in
+                writer.line("init(source: \(type))")
+            }
+
+            for count in Array(1...max(maxCount, 1)) {
+                let parameters = (1...count).map { "L\($0)" }
+                writer.blankLine()
+                writer.line("@dynamicMemberLookup")
+                writer.line(Self.baseAvailabilityAttribute)
+                let generics = parameters.map { "\($0): \(protocolName)" }.joined(separator: ", ")
+                writer.scope("public final class \(catalog.withLocalizationsTypeName(count: count))<\(generics)>: \(type), @unchecked Sendable") { writer in
+                    for parameter in parameters {
+                        writer.line("@_alwaysEmitIntoClient")
+                        writer.scope("public subscript(dynamicMember keyPath: KeyPath<\(parameter), \(type)>) -> \(type)") { writer in
+                            writer.line("\(parameter)(source: self)[keyPath: keyPath]")
+                        }
+                    }
                 }
             }
         }
@@ -304,7 +368,7 @@ class GeneratorCore {
 
     /// `SFSymbol+AllSymbols.swift`: `allSymbols` and `allLocalizations`, which merge the tables of every availability
     /// the OS supports.
-    private static func catalogFile(availabilities: ArraySlice<Availability>) -> String {
+    private func catalogFile(availabilities: ArraySlice<Availability>) -> String {
         func cachedAccessor(_ declaration: [String], cache: String, builder: String, to writer: inout SwiftWriter) {
             writer.lines(declaration.dropLast())
             writer.scope(declaration.last!) { writer in
@@ -326,7 +390,7 @@ class GeneratorCore {
             update: (Availability) -> String,
             to writer: inout SwiftWriter
         ) {
-            writer.lines(inlinableAttributes)
+            writer.lines(Self.inlinableAttributes)
             writer.scope(declaration) { writer in
                 writer.line("var result = \(initialValue)")
                 for availability in availabilities {
@@ -338,17 +402,20 @@ class GeneratorCore {
             }
         }
 
-        return SwiftWriter.generatedFile(indentationWidth: Self.indentationWidth) { writer in
-            writer.line(baseAvailabilityAttribute)
-            writer.scope("extension SFSymbol") { writer in
+        let type = catalog.typeName
+        return generatedFile { writer in
+            writer.line(Self.baseAvailabilityAttribute)
+            writer.scope("extension \(type)") { writer in
                 // `allCases` has been deprecated with the v3 release (spring of 2022)
                 // It shall be removed entirely ~2 years after the v3 release
-                writer.lines([
-                    "@available(*, deprecated, renamed: \"allSymbols\")",
-                    "@_alwaysEmitIntoClient",
-                    "public static var allCases: [SFSymbol] { Array(allSymbols) }",
-                ])
-                writer.blankLine()
+                if !catalog.isPrivate {
+                    writer.lines([
+                        "@available(*, deprecated, renamed: \"allSymbols\")",
+                        "@_alwaysEmitIntoClient",
+                        "public static var allCases: [\(type)] { Array(allSymbols) }",
+                    ])
+                    writer.blankLine()
+                }
 
                 cachedAccessor(
                     [
@@ -357,31 +424,31 @@ class GeneratorCore {
                         "/// - Important: Referencing this property links the full symbol catalog (about 1 MB) into your module.",
                         "///   Apps that only use static symbols such as `.star` don't pay that cost.",
                         "@_alwaysEmitIntoClient",
-                        "public static var allSymbols: Set<SFSymbol>",
+                        "public static var allSymbols: Set<\(type)>",
                     ],
                     cache: "_allSymbolsCache", builder: "_buildAllSymbols", to: &writer
                 )
                 writer.blankLine()
                 cachedAccessor(
-                    inlinableAttributes + ["internal static var allLocalizations: [SFSymbol : Set<Localization>]"],
+                    Self.inlinableAttributes + ["internal static var allLocalizations: [\(type) : Set<Localization>]"],
                     cache: "_allLocalizationsCache", builder: "_buildAllLocalizations", to: &writer
                 )
                 writer.blankLine()
 
-                writer.lines(["@usableFromInline", "internal static let _allSymbolsCache = LockWrapper<Set<SFSymbol>?>(nil)"])
+                writer.lines(["@usableFromInline", "internal static let _allSymbolsCache = LockWrapper<Set<\(type)>?>(nil)"])
                 writer.blankLine()
-                writer.lines(["@usableFromInline", "internal static let _allLocalizationsCache = LockWrapper<[SFSymbol : Set<Localization>]?>(nil)"])
+                writer.lines(["@usableFromInline", "internal static let _allLocalizationsCache = LockWrapper<[\(type) : Set<Localization>]?>(nil)"])
                 writer.blankLine()
 
                 availabilityDependentGetter(
-                    "internal static var _buildAllLocalizations: [SFSymbol : Set<Localization>]",
+                    "internal static var _buildAllLocalizations: [\(type) : Set<Localization>]",
                     initialValue: "localizationsAvailableSince\(Availability.base.versionUnderscored)",
                     update: { "result.merge(localizationsAvailableSince\($0.versionUnderscored)) { $0.union($1) }" },
                     to: &writer
                 )
                 writer.blankLine()
                 availabilityDependentGetter(
-                    "internal static var _buildAllSymbols: Set<SFSymbol>",
+                    "internal static var _buildAllSymbols: Set<\(type)>",
                     initialValue: "Set(allLocalizations.keys)",
                     update: { "result.subtract(symbolsDeprecatedSince\($0.versionUnderscored))" },
                     to: &writer
@@ -408,13 +475,14 @@ class GeneratorCore {
         // Generate symbol
         let localizationStructNames = symbol.availableLocalizations.flatMap { availability, localizations in
             localizations.map {
-                symbol.availability == availability ? $0.baseStructName : $0.structName(for: availability)
+                symbol.availability == availability
+                    ? catalog.baseLocalizationTypeName($0)
+                    : catalog.localizationTypeName($0, for: availability)
             }
         }.sorted()
         let type = switch localizationStructNames.count {
-            case 0: "SFSymbol"
-            case 1: "SymbolWith1Localization<\(localizationStructNames[0])>"
-            default: "SymbolWith\(localizationStructNames.count)Localizations<\(localizationStructNames.joined(separator: ", "))>"
+            case 0: catalog.typeName
+            default: "\(catalog.withLocalizationsTypeName(count: localizationStructNames.count))<\(localizationStructNames.joined(separator: ", "))>"
         }
 
         writer.line("@_alwaysEmitIntoClient")
@@ -509,12 +577,12 @@ class GeneratorCore {
     }
 
     private func makeImageURL(for symbol: Symbol) -> URL? {
-        guard Self.symbolToNSImage(symbol) != nil else { return nil }
+        guard Self.symbolToNSImage(symbol, catalog: catalog) != nil else { return nil }
 
         func make(_ user: String, _ ref: String) -> URL {
             let dir = Self.imageDirectoryPath
             let ext = Self.exportImageExtension
-            let imageURL = "https://raw.githubusercontent.com/\(user)/SFSafeSymbols/refs/\(ref)/Sources/SFSafeSymbols/\(dir)/\(symbol.name).\(ext)"
+            let imageURL = "https://raw.githubusercontent.com/\(user)/SFSafeSymbols/refs/\(ref)/Sources/\(catalog.moduleName)/\(dir)/\(symbol.name).\(ext)"
             return URL(string: imageURL)!
         }
 
@@ -529,10 +597,10 @@ class GeneratorCore {
     }
 
     /// Table lines, each followed by a comment that points to the symbol's getter.
-    private static func tableEntries(_ entries: [(code: String, propertyName: String)]) -> [String] {
+    private func tableEntries(_ entries: [(code: String, propertyName: String)]) -> [String] {
         entries.enumerated().map { index, entry in
             let separator = index == entries.count - 1 ? "" : ","
-            return entry.code + separator + " // SFSymbol." + entry.propertyName
+            return entry.code + separator + " // \(catalog.typeName)." + entry.propertyName
         }
     }
 
@@ -544,25 +612,31 @@ class GeneratorCore {
 
     // MARK: - Images
 
-    private static func symbolToNSImage(_ symbol: Symbol) -> NSImage? {
+    private static func symbolToNSImage(_ symbol: Symbol, catalog: SymbolCatalog) -> NSImage? {
         let configuration = NSImage.SymbolConfiguration(
             pointSize: 35,
             weight: .black
         )
-        return NSImage(
-            systemSymbolName: symbol.name,
-            accessibilityDescription: nil
-        )?.withSymbolConfiguration(configuration)
+        return SystemSymbols.image(of: symbol.name, in: catalog)?.withSymbolConfiguration(configuration)
     }
 
-    private static func symbolToPNG(_ symbol: Symbol, imagesDir: URL) async throws {
-        guard let nsImage = symbolToNSImage(symbol),
+    private static func symbolToPNG(_ symbol: Symbol, catalog: SymbolCatalog, imagesDir: URL) async throws {
+        guard let nsImage = symbolToNSImage(symbol, catalog: catalog),
               let imageData = nsImage.exportSymbol() else {
-            print("Cannot export SFSymbol(\(symbol.name)) to PNG file")
+            print("Cannot export \(catalog.typeName)(\(symbol.name)) to PNG file")
             return
         }
 
         let url = imagesDir.appending(path: "\(symbol.name).\(Self.exportImageExtension)")
         try SFFileManager.write(imageData, to: url)
+    }
+
+    // MARK: - Names
+
+    /// Whether the name's first component is a placeholder of 32 hexadecimal digits, which the system uses for symbols
+    /// of unreleased products (e. g. `0828E54B965E418AB42353CA91BFBBEE.fill`).
+    private static func isPlaceholderName(_ name: String) -> Bool {
+        let firstComponent = name.prefix { $0 != "." }
+        return firstComponent.count == 32 && firstComponent.allSatisfy(\.isHexDigit)
     }
 }

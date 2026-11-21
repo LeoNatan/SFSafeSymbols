@@ -30,6 +30,12 @@ struct SymbolsGeneratorCommand: AsyncParsableCommand {
     )
     private var outputDir: URL
 
+    @Option(
+        help: "The output directory for generated private symbol files. Private symbols are only generated if set.",
+        transform: URL.init(fileURLWithPath:)
+    )
+    private var privateOutputDir: URL?
+
     @Flag(help: "The generation mode")
     private var mode: CLIMode = .dev
 
@@ -42,6 +48,11 @@ struct SymbolsGeneratorCommand: AsyncParsableCommand {
     mutating func validate() throws {
         guard (try? outputDir.resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true else {
             throw ValidationError("❌ Output path must be a directory.")
+        }
+        if let privateOutputDir {
+            guard (try? privateOutputDir.resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true else {
+                throw ValidationError("❌ Private output path must be a directory.")
+            }
         }
 
         switch mode {
@@ -80,8 +91,11 @@ struct SymbolsGeneratorCommand: AsyncParsableCommand {
             case .release:
                 generationMode = .release(tag: tag!)
         }
-        let generator = GeneratorCore(outputDir: outputDir, mode: generationMode)
-        try await generator.run()
+        try await GeneratorCore(outputDir: outputDir, mode: generationMode, catalog: .public).run()
+        if let privateOutputDir {
+            print("Generating private symbols...")
+            try await GeneratorCore(outputDir: privateOutputDir, mode: generationMode, catalog: .private).run()
+        }
         let duration = Date().timeIntervalSince(start)
         print("✅ Generation completed in \(String(format: "%.2f", duration)) seconds.")
     }

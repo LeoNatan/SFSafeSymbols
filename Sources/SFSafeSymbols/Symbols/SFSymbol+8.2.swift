@@ -3,7 +3,7 @@
 // 8.2 Symbols
 @available(iOS 27.2, macOS 27.2, tvOS 27.2, watchOS 27.2, visionOS 27.2, *)
 public extension SFSymbol {
-    /// ![􀷱](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/airplane.ticket.perforated.webp)\
+    /// ![􀷱](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/airplane.ticket.perforated.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -12,7 +12,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var airplaneTicketPerforated: SFSymbol { .init("airplane.ticket.perforated") }
 
-    /// ![􀷲](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/airplane.ticket.perforated.fill.webp)\
+    /// ![􀷲](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/airplane.ticket.perforated.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -21,7 +21,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var airplaneTicketPerforatedFill: SFSymbol { .init("airplane.ticket.perforated.fill") }
 
-    /// ![􃠄](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.webp)\
+    /// ![􃠄](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -32,7 +32,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var appsIphoneDuo: SFSymbol { .init("apps.iphone.duo") }
 
-    /// ![􃠅](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.open.landscape.webp)\
+    /// ![􃠅](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.open.landscape.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -43,7 +43,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var appsIphoneDuoOpenLandscape: SFSymbol { .init("apps.iphone.duo.open.landscape") }
 
-    /// ![􃠆](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.open.portrait.webp)\
+    /// ![􃠆](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/apps.iphone.duo.open.portrait.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -54,7 +54,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var appsIphoneDuoOpenPortrait: SFSymbol { .init("apps.iphone.duo.open.portrait") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.checkmark.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.checkmark.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -62,7 +62,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowDownCircleBadgeCheckmark: SFSymbol { .init("arrow.down.circle.badge.checkmark") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.checkmark.fill.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.checkmark.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -70,7 +70,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowDownCircleBadgeCheckmarkFill: SFSymbol { .init("arrow.down.circle.badge.checkmark.fill") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.clock.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.clock.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -78,7 +78,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowDownCircleBadgeClock: SFSymbol { .init("arrow.down.circle.badge.clock") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.clock.fill.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.down.circle.badge.clock.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -86,7 +86,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowDownCircleBadgeClockFill: SFSymbol { .init("arrow.down.circle.badge.clock.fill") }
 
-    /// ![􃢭](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.backward.viewfinder.webp)\
+    /// ![􃢭](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.backward.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -95,7 +95,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadBackwardViewfinder: SFSymbol { .init("arrow.trianglehead.backward.viewfinder") }
 
-    /// ![􃢴](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.left.viewfinder.webp)\
+    /// ![􃢴](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.left.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -104,7 +104,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadDownLeftViewfinder: SFSymbol { .init("arrow.trianglehead.down.left.viewfinder") }
 
-    /// ![􃢵](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.right.viewfinder.webp)\
+    /// ![􃢵](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.right.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -113,7 +113,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadDownRightViewfinder: SFSymbol { .init("arrow.trianglehead.down.right.viewfinder") }
 
-    /// ![􃢱](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.viewfinder.webp)\
+    /// ![􃢱](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.down.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -122,7 +122,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadDownViewfinder: SFSymbol { .init("arrow.trianglehead.down.viewfinder") }
 
-    /// ![􃢯](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.forward.viewfinder.webp)\
+    /// ![􃢯](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.forward.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -131,7 +131,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadForwardViewfinder: SFSymbol { .init("arrow.trianglehead.forward.viewfinder") }
 
-    /// ![􃢬](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.left.viewfinder.webp)\
+    /// ![􃢬](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.left.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -140,7 +140,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadLeftViewfinder: SFSymbol { .init("arrow.trianglehead.left.viewfinder") }
 
-    /// ![􃢮](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.right.viewfinder.webp)\
+    /// ![􃢮](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.right.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -149,7 +149,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadRightViewfinder: SFSymbol { .init("arrow.trianglehead.right.viewfinder") }
 
-    /// ![􃢲](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.left.viewfinder.webp)\
+    /// ![􃢲](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.left.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -158,7 +158,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadUpLeftViewfinder: SFSymbol { .init("arrow.trianglehead.up.left.viewfinder") }
 
-    /// ![􃢳](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.right.viewfinder.webp)\
+    /// ![􃢳](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.right.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -167,7 +167,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadUpRightViewfinder: SFSymbol { .init("arrow.trianglehead.up.right.viewfinder") }
 
-    /// ![􃢰](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.viewfinder.webp)\
+    /// ![􃢰](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/arrow.trianglehead.up.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -176,7 +176,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var arrowTriangleheadUpViewfinder: SFSymbol { .init("arrow.trianglehead.up.viewfinder") }
 
-    /// ![􃢼](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/beats.studio.pro.webp)\
+    /// ![􃢼](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/beats.studio.pro.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -186,7 +186,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var beatsStudioPro: SFSymbol { .init("beats.studio.pro") }
 
-    /// ![􃢪](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/bookmark.text.page.webp)\
+    /// ![􃢪](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/bookmark.text.page.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -194,7 +194,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var bookmarkTextPage: SFSymbol { .init("bookmark.text.page") }
 
-    /// ![􃣃](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/bookmark.text.page.fill.webp)\
+    /// ![􃣃](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/bookmark.text.page.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -202,7 +202,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var bookmarkTextPageFill: SFSymbol { .init("bookmark.text.page.fill") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/bubble.left.and.heart.bubble.right.badge.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/bubble.left.and.heart.bubble.right.badge.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -210,7 +210,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var bubbleLeftAndHeartBubbleRightBadge: SFSymbol { .init("bubble.left.and.heart.bubble.right.badge") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/bubble.left.and.heart.bubble.right.badge.fill.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/bubble.left.and.heart.bubble.right.badge.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -218,7 +218,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var bubbleLeftAndHeartBubbleRightBadgeFill: SFSymbol { .init("bubble.left.and.heart.bubble.right.badge.fill") }
 
-    /// ![􃣚](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/calendar.day.and.person.webp)\
+    /// ![􃣚](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/calendar.day.and.person.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -227,7 +227,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var calendarDayAndPerson: SFSymbol { .init("calendar.day.and.person") }
 
-    /// ![􃞺](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/camera.aperture.closed.webp)\
+    /// ![􃞺](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/camera.aperture.closed.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -235,7 +235,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var cameraApertureClosed: SFSymbol { .init("camera.aperture.closed") }
 
-    /// ![􃞻](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/camera.aperture.open.webp)\
+    /// ![􃞻](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/camera.aperture.open.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -243,7 +243,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var cameraApertureOpen: SFSymbol { .init("camera.aperture.open") }
 
-    /// ![􃣘](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/capsule.long.webp)\
+    /// ![􃣘](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/capsule.long.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -251,7 +251,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var capsuleLong: SFSymbol { .init("capsule.long") }
 
-    /// ![􃣙](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/capsule.long.fill.webp)\
+    /// ![􃣙](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/capsule.long.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -259,7 +259,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var capsuleLongFill: SFSymbol { .init("capsule.long.fill") }
 
-    /// ![􃢽](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/chart.stackedarea.webp)\
+    /// ![􃢽](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/chart.stackedarea.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -267,7 +267,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var chartStackedarea: SFSymbol { .init("chart.stackedarea") }
 
-    /// ![􃡴](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/circle.dotted.and.line.horizontal.webp)\
+    /// ![􃡴](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/circle.dotted.and.line.horizontal.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -276,7 +276,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var circleDottedAndLineHorizontal: SFSymbol { .init("circle.dotted.and.line.horizontal") }
 
-    /// ![􃣄](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/circle.grid.3x3.chevron.compact.down.fill.webp)\
+    /// ![􃣄](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/circle.grid.3x3.chevron.compact.down.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -285,7 +285,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var circleGrid3x3ChevronCompactDownFill: SFSymbol { .init("circle.grid.3x3.chevron.compact.down.fill") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/display.badge.checkmark.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/display.badge.checkmark.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -293,7 +293,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var displayBadgeCheckmark: SFSymbol { .init("display.badge.checkmark") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/display.badge.exclamationmark.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/display.badge.exclamationmark.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -301,7 +301,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var displayBadgeExclamationmark: SFSymbol { .init("display.badge.exclamationmark") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/document.badge.arrow.down.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/document.badge.arrow.down.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -309,7 +309,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var documentBadgeArrowDown: SFSymbol { .init("document.badge.arrow.down") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/document.badge.arrow.down.fill.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/document.badge.arrow.down.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -317,7 +317,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var documentBadgeArrowDownFill: SFSymbol { .init("document.badge.arrow.down.fill") }
 
-    /// ![􃣢](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/dot.list.bullet.page.webp)\
+    /// ![􃣢](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/dot.list.bullet.page.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -326,7 +326,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var dotListBulletPage: SFSymbol { .init("dot.list.bullet.page") }
 
-    /// ![􃣣](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/dot.list.bullet.page.fill.webp)\
+    /// ![􃣣](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/dot.list.bullet.page.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -335,7 +335,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var dotListBulletPageFill: SFSymbol { .init("dot.list.bullet.page.fill") }
 
-    /// ![􃡸](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/ev.charging.plug.webp)\
+    /// ![􃡸](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/ev.charging.plug.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -343,7 +343,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var evChargingPlug: SFSymbol { .init("ev.charging.plug") }
 
-    /// ![􃡹](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/ev.charging.plug.fill.webp)\
+    /// ![􃡹](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/ev.charging.plug.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -351,7 +351,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var evChargingPlugFill: SFSymbol { .init("ev.charging.plug.fill") }
 
-    /// ![􃢍](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/inset.filled.topthird.middlethird.bottomthird.trailinghalf.rectangle.split.2x1.webp)\
+    /// ![􃢍](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/inset.filled.topthird.middlethird.bottomthird.trailinghalf.rectangle.split.2x1.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -360,7 +360,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var insetFilledTopthirdMiddlethirdBottomthirdTrailinghalfRectangleSplit2x1: SFSymbol { .init("inset.filled.topthird.middlethird.bottomthird.trailinghalf.rectangle.split.2x1") }
 
-    /// ![􃟼](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.webp)\
+    /// ![􃟼](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -371,7 +371,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuo: SFSymbol { .init("iphone.duo") }
 
-    /// ![􃠪](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.and.arrow.top.and.arrow.right.inward.webp)\
+    /// ![􃠪](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.and.arrow.top.and.arrow.right.inward.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -382,7 +382,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoAndArrowTopAndArrowRightInward: SFSymbol { .init("iphone.duo.and.arrow.top.and.arrow.right.inward") }
 
-    /// ![􃣕](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.webp)\
+    /// ![􃣕](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -392,7 +392,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoCase: SFSymbol { .init("iphone.duo.case") }
 
-    /// ![􃣖](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.open.landscape.webp)\
+    /// ![􃣖](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.open.landscape.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -402,7 +402,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoCaseOpenLandscape: SFSymbol { .init("iphone.duo.case.open.landscape") }
 
-    /// ![􃣗](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.open.portrait.webp)\
+    /// ![􃣗](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.case.open.portrait.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -412,7 +412,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoCaseOpenPortrait: SFSymbol { .init("iphone.duo.case.open.portrait") }
 
-    /// ![􃣅](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.motion.webp)\
+    /// ![􃣅](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.motion.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -423,7 +423,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoMotion: SFSymbol { .init("iphone.duo.motion") }
 
-    /// ![􃟾](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.landscape.webp)\
+    /// ![􃟾](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.landscape.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -434,7 +434,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoOpenLandscape: SFSymbol { .init("iphone.duo.open.landscape") }
 
-    /// ![􃢑](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.partial.landscape.webp)\
+    /// ![􃢑](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.partial.landscape.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -445,7 +445,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoOpenPartialLandscape: SFSymbol { .init("iphone.duo.open.partial.landscape") }
 
-    /// ![􃢐](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.partial.portrait.webp)\
+    /// ![􃢐](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.partial.portrait.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -456,7 +456,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoOpenPartialPortrait: SFSymbol { .init("iphone.duo.open.partial.portrait") }
 
-    /// ![􃠀](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.portrait.webp)\
+    /// ![􃠀](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.open.portrait.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -467,7 +467,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoOpenPortrait: SFSymbol { .init("iphone.duo.open.portrait") }
 
-    /// ![􃠫](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.radiowaves.left.and.right.webp)\
+    /// ![􃠫](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.radiowaves.left.and.right.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -478,7 +478,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoRadiowavesLeftAndRight: SFSymbol { .init("iphone.duo.radiowaves.left.and.right") }
 
-    /// ![􃟽](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.rear.camera.webp)\
+    /// ![􃟽](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.rear.camera.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -488,7 +488,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoRearCamera: SFSymbol { .init("iphone.duo.rear.camera") }
 
-    /// ![􃟿](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.rear.open.landscape.webp)\
+    /// ![􃟿](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.rear.open.landscape.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -499,7 +499,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoRearOpenLandscape: SFSymbol { .init("iphone.duo.rear.open.landscape") }
 
-    /// ![􃠂](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.seated.webp)\
+    /// ![􃠂](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.seated.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -510,7 +510,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoSeated: SFSymbol { .init("iphone.duo.seated") }
 
-    /// ![􃠃](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.standing.landscape.webp)\
+    /// ![􃠃](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.standing.landscape.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -521,7 +521,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoStandingLandscape: SFSymbol { .init("iphone.duo.standing.landscape") }
 
-    /// ![􃢫](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/iphone.duo.standing.portrait.webp)\
+    /// ![􃢫](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/iphone.duo.standing.portrait.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -532,7 +532,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var iphoneDuoStandingPortrait: SFSymbol { .init("iphone.duo.standing.portrait") }
 
-    /// ![􀹲](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/list.bullet.page.webp)\
+    /// ![􀹲](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/list.bullet.page.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -541,7 +541,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var listBulletPage: SFSymbol { .init("list.bullet.page") }
 
-    /// ![􀹳](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/list.bullet.page.fill.webp)\
+    /// ![􀹳](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/list.bullet.page.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -550,7 +550,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var listBulletPageFill: SFSymbol { .init("list.bullet.page.fill") }
 
-    /// ![􃠦](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/lock.iphone.duo.webp)\
+    /// ![􃠦](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/lock.iphone.duo.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -561,7 +561,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var lockIphoneDuo: SFSymbol { .init("lock.iphone.duo") }
 
-    /// ![􃠧](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/lock.open.iphone.duo.webp)\
+    /// ![􃠧](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/lock.open.iphone.duo.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -572,7 +572,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var lockOpenIphoneDuo: SFSymbol { .init("lock.open.iphone.duo") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.slash.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.slash.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -580,7 +580,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personCropSquareSlash: SFSymbol { .init("person.crop.square.slash") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.slash.fill.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.slash.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -588,7 +588,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personCropSquareSlashFill: SFSymbol { .init("person.crop.square.slash.fill") }
 
-    /// ![􃠬](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.pattern.diagonalline.and.exclamationmark.webp)\
+    /// ![􃠬](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.pattern.diagonalline.and.exclamationmark.webp)\
     /// 2 Localizations, 2 Layersets
     ///
     /// Localizations:
@@ -601,7 +601,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personPatternDiagonallineAndExclamationmark: SymbolWith1Localization<Rtl> { .init("person.pattern.diagonalline.and.exclamationmark") }
 
-    /// ![􃠒](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/plus.icloud.webp)\
+    /// ![􃠒](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/plus.icloud.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -612,7 +612,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var plusIcloud: SFSymbol { .init("plus.icloud") }
 
-    /// ![􃠓](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/plus.icloud.fill.webp)\
+    /// ![􃠓](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/plus.icloud.fill.webp)\
     /// Single Localization, 3 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -624,7 +624,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var plusIcloudFill: SFSymbol { .init("plus.icloud.fill") }
 
-    /// ![􃡶](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/point.and.arrow.3.forward.webp)\
+    /// ![􃡶](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/point.and.arrow.3.forward.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -633,7 +633,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var pointAndArrow3Forward: SFSymbol { .init("point.and.arrow.3.forward") }
 
-    /// ![􃡷](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/point.and.arrow.3.forward.fill.webp)\
+    /// ![􃡷](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/point.and.arrow.3.forward.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -642,7 +642,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var pointAndArrow3ForwardFill: SFSymbol { .init("point.and.arrow.3.forward.fill") }
 
-    /// ![􃢹](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/signal.meter.horizontal.bars.4.webp)\
+    /// ![􃢹](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/signal.meter.horizontal.bars.4.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -650,7 +650,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var signalMeterHorizontalBars4: SFSymbol { .init("signal.meter.horizontal.bars.4") }
 
-    /// ![􃢺](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/signal.meter.vertical.bars.4.webp)\
+    /// ![􃢺](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/signal.meter.vertical.bars.4.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -658,7 +658,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var signalMeterVerticalBars4: SFSymbol { .init("signal.meter.vertical.bars.4") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/siri.badge.chart.bar.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/siri.badge.chart.bar.webp)\
     /// Single Localization, Single Layerset, ⚠️ Restricted
     ///
     /// Layersets:
@@ -668,7 +668,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var siriBadgeChartBar: SFSymbol { .init("siri.badge.chart.bar") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/text.pad.header.badge.waveform.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/text.pad.header.badge.waveform.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -676,7 +676,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var textPadHeaderBadgeWaveform: SFSymbol { .init("text.pad.header.badge.waveform") }
 
-    /// ![􃣋](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/ticket.perforated.webp)\
+    /// ![􃣋](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/ticket.perforated.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -684,7 +684,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var ticketPerforated: SFSymbol { .init("ticket.perforated") }
 
-    /// ![􃣌](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/ticket.perforated.fill.webp)\
+    /// ![􃣌](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/ticket.perforated.fill.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -692,7 +692,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var ticketPerforatedFill: SFSymbol { .init("ticket.perforated.fill") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/timelapse.badge.automatic.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/timelapse.badge.automatic.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -700,7 +700,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var timelapseBadgeAutomatic: SFSymbol { .init("timelapse.badge.automatic") }
 
-    /// ![No preview available](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/timer.slash.webp)\
+    /// ![No preview available](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/timer.slash.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -708,7 +708,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var timerSlash: SFSymbol { .init("timer.slash") }
 
-    /// ![􃡀](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/translate.fill.webp)\
+    /// ![􃡀](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/translate.fill.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -719,7 +719,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var translateFill: SFSymbol { .init("translate.fill") }
 
-    /// ![􃡺](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/windsock.webp)\
+    /// ![􃡺](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/windsock.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:

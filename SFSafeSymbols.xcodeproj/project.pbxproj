@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015DAA162438E46B1DC46EF2 /* SFPrivateSymbol+AllSymbols+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C4F6456089BDF3850C93C /* SFPrivateSymbol+AllSymbols+1.0.swift */; };
+		07EAAEF4EB6EB01447E17D5B /* SFPrivateSymbol+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79A179E74057B0220D3E37 /* SFPrivateSymbol+7.1.swift */; };
+		08B7C70D5E41867406292228 /* SFPrivateSymbol+AllSymbols+5.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94910DBA8EC5DE5B53CEF5A /* SFPrivateSymbol+AllSymbols+5.0.swift */; };
+		0AD2900DB837F9E8B8F87A09 /* SFPrivateSymbol+6.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314A5BED41C499CC9874E7F9 /* SFPrivateSymbol+6.2.swift */; };
+		12394BC00E01502866420C53 /* SFPrivateSymbol+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11799F6A7F50E2CC443D92AA /* SFPrivateSymbol+3.0.swift */; };
+		2499F4026559B9B8040EFE17 /* SFPrivateSymbol+AllSymbols+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058161515425136FEF7A79D0 /* SFPrivateSymbol+AllSymbols+8.2.swift */; };
+		253B5B58C0DD66951A3CEFEE /* SFPrivateSymbol+AllSymbols+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CEDCB8E39C8A750F91BB2 /* SFPrivateSymbol+AllSymbols+1.1.swift */; };
+		2B7E04DD9C848E13631CBE53 /* SFPrivateSymbol+AllSymbols+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B39B8B0725EDA3F6779718 /* SFPrivateSymbol+AllSymbols+3.1.swift */; };
+		307E745D39CEF2D9CD3968DE /* SFPrivateSymbol+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C81432C8E3CFBDDBB63E6 /* SFPrivateSymbol+2.0.swift */; };
+		310A2A3350D592A95D25E1EF /* SFPrivateSymbol+7.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8C071D6E8BC77822F76B8 /* SFPrivateSymbol+7.0.swift */; };
+		38C774D9ABA9D0322809A916 /* SFPrivateSymbol+6.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14196E504DCA987ACC99C62A /* SFPrivateSymbol+6.1.swift */; };
+		39C2107B088FA74F6449E7C5 /* SFPrivateSymbol+AllSymbols+6.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C123CCEC9A517F016F1F34E2 /* SFPrivateSymbol+AllSymbols+6.4.swift */; };
+		3F3791C40A9EBA9D696625C2 /* NSImage+SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F82288D805204B00BC102A /* NSImage+SFPrivateSymbol.swift */; };
+		3F39C995412C4C88415996FF /* UIImage+SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A70005B5701E76AD1E074C /* UIImage+SFPrivateSymbol.swift */; };
+		43F25987336D06CF50CB4729 /* SFPrivateSymbol+AllSymbols+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817FA1F3D92A2305478668E /* SFPrivateSymbol+AllSymbols+7.1.swift */; };
+		44AB65FF103B74CC186F0DF5 /* SFSafeSymbols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SFSafeSymbols::SFSafeSymbols::Product" /* SFSafeSymbols.framework */; };
+		4C99DCFCC2B924B8D0F8026D /* SFSymbol+AllSymbols+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B48B0EB4BECD9E2292F87 /* SFSymbol+AllSymbols+8.0.swift */; };
+		4FE0B51F8A1B042581E15639 /* SFPrivateSymbol+AllSymbols+4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95C844D4B4F58DF7D649EA /* SFPrivateSymbol+AllSymbols+4.2.swift */; };
+		5032A71ECB58831CF678A4F4 /* SFPrivateSymbol+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A43F098C20EF8041BE37435 /* SFPrivateSymbol+6.0.swift */; };
+		5AFE10C12F0B000100A1B2C3 /* LockWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE10C22F0B000100A1B2C3 /* LockWrapper.swift */; };
+		5B7FB0E9EA6D2875E5B67065 /* SFPrivateSymbol+AllSymbols+6.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1EF615FF3AEAAE0CF965E /* SFPrivateSymbol+AllSymbols+6.1.swift */; };
+		5B9BDFA5B17C101450D0BC6E /* SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CF18AB1FB4965F214C9DC /* SFPrivateSymbol.swift */; };
+		5DEB5C06083F2C9DF5189160 /* SFPrivateSymbol+5.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A86582AD616AC2A638A97 /* SFPrivateSymbol+5.0.swift */; };
 		636A46BB28002819007E6028 /* SFSymbol+AllSymbols+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A46AB28002816007E6028 /* SFSymbol+AllSymbols+1.0.swift */; };
 		636A46BC28002819007E6028 /* SFSymbol+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A46AC28002817007E6028 /* SFSymbol+2.1.swift */; };
 		636A46BD28002819007E6028 /* SFSymbol+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A46AD28002817007E6028 /* SFSymbol+2.0.swift */; };
@@ -24,20 +47,38 @@
 		636A46C928002819007E6028 /* SFSymbol+AllSymbols+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A46B928002819007E6028 /* SFSymbol+AllSymbols+2.1.swift */; };
 		636A46CA28002819007E6028 /* SFSymbol+AllSymbols+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A46BA28002819007E6028 /* SFSymbol+AllSymbols+2.0.swift */; };
 		636EBFD427EB2ABC005CFF4C /* SymbolWithLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EBFD327EB2ABC005CFF4C /* SymbolWithLocalizations.swift */; };
+		6CC79827AC3D491874963F68 /* SFPrivateSymbol+AllSymbols+4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDD2D122820FF9A7BF333C4 /* SFPrivateSymbol+AllSymbols+4.0.swift */; };
+		6EFAC93F3322633FD022853D /* SFPrivateSymbol+AllSymbols+5.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871DD8690ED5C09F0EFAABE9 /* SFPrivateSymbol+AllSymbols+5.3.swift */; };
+		76CB51470A5757E55AB8CE12 /* SFSymbol+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1365802CD8560750B0DC799 /* SFSymbol+7.1.swift */; };
+		7C26A97ED1FB15B624B48D5A /* SFPrivateSymbol+6.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE11D52D6350CFF2C73F277 /* SFPrivateSymbol+6.4.swift */; };
+		8494B10C0FEDC8B13E442F38 /* SFPrivateSymbol+AllSymbols+6.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71C29DBA9830C96B8B3828 /* SFPrivateSymbol+AllSymbols+6.2.swift */; };
+		869FB1EACC0941FDCEEFBCC1 /* SFPrivateSymbol+AllSymbols+5.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA27C22FE1134915B120DE /* SFPrivateSymbol+AllSymbols+5.1.swift */; };
+		88F987EB0DC53FAD631D5C8D /* SFPrivateSymbol+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3E081CE736B76151EE6CB2 /* SFPrivateSymbol+3.3.swift */; };
+		8B597A18250D595A14F46818 /* SFSymbol+AllSymbols+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D38146797268F567EDF7D /* SFSymbol+AllSymbols+8.2.swift */; };
+		8ECABC3BC2A9961A885243FE /* SFPrivateSymbol+AllSymbols+4.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232C425451F438000DA5D1C /* SFPrivateSymbol+AllSymbols+4.1.swift */; };
+		938A814CCC2EC15ADEA74A72 /* SFPrivateSymbol+6.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294C99A6A6310256ACCEC5C8 /* SFPrivateSymbol+6.3.swift */; };
 		949BD15D2B74155100A10AB7 /* SwiftUIButtonExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BD15C2B74155100A10AB7 /* SwiftUIButtonExtensionTests.swift */; };
 		949BD15F2B74156800A10AB7 /* Button+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BD15E2B74156800A10AB7 /* Button+SFSymbol.swift */; };
+		985EBBF34682559D43A1B51F /* SFPrivateSymbol+1.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0136077FBC9F2DBDFA91F8D /* SFPrivateSymbol+1.1.swift */; };
+		991155E498598844825AE05B /* SFPrivateSymbol+AllSymbols+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E68A5B7545B4618FBAFE0 /* SFPrivateSymbol+AllSymbols+2.1.swift */; };
+		9A85F8B49C12D7A62CFFCB7E /* SFSymbol+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC03056469A6DAF6956DD3E /* SFSymbol+8.2.swift */; };
+		9D5F7149812F3E6566CC264D /* PrivateSymbolLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBCBB0F7A42F2BC3E511F /* PrivateSymbolLocalizations.swift */; };
+		9DC4AFF547D68B80348C81D7 /* SFSafeSymbolsPrivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1F84D6B0AC838D3B523E58 /* SFSafeSymbolsPrivate.framework */; };
+		A16735B148F6FA22A451542D /* SFPrivateSymbol+4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022D73E9970551ACE3FE28A /* SFPrivateSymbol+4.0.swift */; };
+		A2D7A22C979047EE224DB294 /* PrivateSymbolImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5D19237E7EFBBE9D9C6AA3 /* PrivateSymbolImage.swift */; };
 		A43C044E2E14796600BD5E45 /* SFSymbol+6.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C044B2E14796600BD5E45 /* SFSymbol+6.3.swift */; };
 		A43C044F2E14796600BD5E45 /* SFSymbol+7.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C044D2E14796600BD5E45 /* SFSymbol+7.0.swift */; };
-		76CB51470A5757E55AB8CE12 /* SFSymbol+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1365802CD8560750B0DC799 /* SFSymbol+7.1.swift */; };
-		DC080ED89F83426283A97E19 /* SFSymbol+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE68BFBAF35AEF480AF8F59 /* SFSymbol+8.0.swift */; };
-		9A85F8B49C12D7A62CFFCB7E /* SFSymbol+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC03056469A6DAF6956DD3E /* SFSymbol+8.2.swift */; };
 		A43C04502E14796600BD5E45 /* SFSymbol+6.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C044C2E14796600BD5E45 /* SFSymbol+6.4.swift */; };
 		A43C04542E14798800BD5E45 /* SFSymbol+AllSymbols+6.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C04522E14798800BD5E45 /* SFSymbol+AllSymbols+6.4.swift */; };
 		A43C04552E14798800BD5E45 /* SFSymbol+AllSymbols+6.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C04512E14798800BD5E45 /* SFSymbol+AllSymbols+6.3.swift */; };
 		A43C04562E14798800BD5E45 /* SFSymbol+AllSymbols+7.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C04532E14798800BD5E45 /* SFSymbol+AllSymbols+7.0.swift */; };
-		D9FE12163BFAE3B2FB832A51 /* SFSymbol+AllSymbols+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BAF26F9D04BB2EEF92C5B /* SFSymbol+AllSymbols+7.1.swift */; };
-		4C99DCFCC2B924B8D0F8026D /* SFSymbol+AllSymbols+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010B48B0EB4BECD9E2292F87 /* SFSymbol+AllSymbols+8.0.swift */; };
-		8B597A18250D595A14F46818 /* SFSymbol+AllSymbols+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D38146797268F567EDF7D /* SFSymbol+AllSymbols+8.2.swift */; };
+		A44C6F0E68FA2A6B8DF24C2F /* SFPrivateSymbol+4.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6692B3E15EAC9995FCE57674 /* SFPrivateSymbol+4.2.swift */; };
+		A4D7F00CB3843548402A3E11 /* SFPrivateSymbol+2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A439BFB9E1BAFFBE023B517A /* SFPrivateSymbol+2.1.swift */; };
+		A6CA603A4849A07A0C970885 /* SFSafeSymbols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SFSafeSymbols::SFSafeSymbols::Product" /* SFSafeSymbols.framework */; };
+		AC6F36A9F35B3110EBB94C1D /* SFPrivateSymbol+4.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A942E564CE0F80D5380696 /* SFPrivateSymbol+4.1.swift */; };
+		ACB5846B9D1CD39D76AF87A6 /* SFPrivateSymbol+AllSymbols+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1C61B4E368F1B0F181FDF /* SFPrivateSymbol+AllSymbols+8.0.swift */; };
+		AEEFB3550B3045048D8A5A40 /* SFPrivateSymbol+AllSymbols+3.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6458453009619CC243E619A7 /* SFPrivateSymbol+AllSymbols+3.3.swift */; };
+		AF7788CDBFDE253C11EBBC94 /* SFPrivateSymbol+3.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C20CDE2E053FABCE40514 /* SFPrivateSymbol+3.1.swift */; };
 		B0031A482D6945720040002B /* SFSymbol+AllSymbols+6.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0031A462D6945720040002B /* SFSymbol+AllSymbols+6.1.swift */; };
 		B0031A492D6945720040002B /* SFSymbol+6.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0031A442D6945720040002B /* SFSymbol+6.1.swift */; };
 		B0031A4A2D6945720040002B /* SFSymbol+6.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0031A452D6945720040002B /* SFSymbol+6.2.swift */; };
@@ -66,10 +107,17 @@
 		B0B852002C1DC9B000E87F17 /* SFSymbol+AllSymbols+5.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B851FE2C1DC9B000E87F17 /* SFSymbol+AllSymbols+5.3.swift */; };
 		B0B852012C1DC9B000E87F17 /* SFSymbol+5.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B851FF2C1DC9B000E87F17 /* SFSymbol+5.3.swift */; };
 		B0DDAE152637C11400081F1C /* CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDAE112637BF3300081F1C /* CodableTests.swift */; };
+		B6CFF78C8DD39FEE01BA3737 /* SFPrivateSymbol+5.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDAE53D0539AF88C895F699 /* SFPrivateSymbol+5.3.swift */; };
+		B930C3D32D8B2D2A8C48BAD0 /* Label+SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB689251D324600B6E85E73 /* Label+SFPrivateSymbol.swift */; };
+		BC28A4D0A0D5F02E1C8D1B94 /* SFPrivateSymbol+AllSymbols+3.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA97F0DFF89FEC3B68EDD6A7 /* SFPrivateSymbol+AllSymbols+3.0.swift */; };
+		BF3DEA8DDDFF8569999F9276 /* SFPrivateSymbol+8.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB2D8EDF797328BF285B63 /* SFPrivateSymbol+8.2.swift */; };
+		C0FE3B39FF2FBB5E50AA5A86 /* SFPrivateSymbol+AllSymbols+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CC0FFEE257A9EBD825BD34 /* SFPrivateSymbol+AllSymbols+6.0.swift */; };
+		C2F5C3D17F6EA2CA203845B5 /* SFPrivateSymbol+5.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0304D193021F6EC437C0A1DF /* SFPrivateSymbol+5.1.swift */; };
+		C54131F7E102BADE147B3580 /* SFPrivateSymbol+AllSymbols+5.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8B127021D00BDDED6BFC5 /* SFPrivateSymbol+AllSymbols+5.2.swift */; };
+		C6C5C5D5353A9C4417431A59 /* SFPrivateSymbol+5.2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337991FCD86BAFC5D520DC55 /* SFPrivateSymbol+5.2.swift */; };
 		CC1D812F27F758D200CACDC7 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D812E27F758D200CACDC7 /* TestHelper.swift */; };
 		CCA29C3D285B4E9400133245 /* SFSymbol+AllSymbols+4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA29C3B285B4E9400133245 /* SFSymbol+AllSymbols+4.0.swift */; };
 		CCA29C3E285B4E9400133245 /* SFSymbol+4.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA29C3C285B4E9400133245 /* SFSymbol+4.0.swift */; };
-		5AFE10C12F0B000100A1B2C3 /* LockWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE10C22F0B000100A1B2C3 /* LockWrapper.swift */; };
 		CCCCCFEC252F61E700C7CE9F /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCFE5252F61E700C7CE9F /* SFSymbol.swift */; };
 		CCCCCFEE252F61E700C7CE9F /* Image+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCFE8252F61E700C7CE9F /* Image+SFSymbol.swift */; };
 		CCCCCFEF252F61E700C7CE9F /* UIApplicationShortcutIcon+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCCFE9252F61E700C7CE9F /* UIApplicationShortcutIcon+SFSymbol.swift */; };
@@ -81,16 +129,48 @@
 		CCCCD01A252F622B00C7CE9F /* UIImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD015252F622B00C7CE9F /* UIImageExtensionTests.swift */; };
 		CCCCD047252F632600C7CE9F /* NSImage+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD046252F632600C7CE9F /* NSImage+SFSymbol.swift */; };
 		CCCCD064252F804400C7CE9F /* NSImageExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCD055252F7F7F00C7CE9F /* NSImageExtensionTests.swift */; };
+		CDC77BDA086BA52DBC4FB2A0 /* SFSymbol+8.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D502EA96C52C9B56D7D7651E /* SFSymbol+8.3.swift */; };
+		CE9A51580EDB8E78BF5D971F /* Button+SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E748A02BE400A81E3C377208 /* Button+SFPrivateSymbol.swift */; };
+		D0E2622C90A86DDECC371659 /* SFPrivateSymbol+8.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674468D309FEA60E4495D406 /* SFPrivateSymbol+8.3.swift */; };
+		D160AA09DBA5A8494C7F9C82 /* SFPrivateSymbol+AllSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F53BEA3BFC554B926ECD6 /* SFPrivateSymbol+AllSymbols.swift */; };
+		D1F1268B7B64C3CC7F20A48B /* SFPrivateSymbol+AllSymbols+6.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D919A735F624C1F77385C /* SFPrivateSymbol+AllSymbols+6.3.swift */; };
+		D3041FFCDE12CC65DF7CFF5A /* SFPrivateSymbol+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2CFABC6E35DBCF3371ABEB /* SFPrivateSymbol+8.0.swift */; };
+		D4B62B6A9C232CC9A22B8761 /* PrivateSymbolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F32F818F46B0242FFEB517E /* PrivateSymbolTests.swift */; };
+		D4D8089BF1B169556CE59A17 /* PrivateSymbolWithLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B03E8CCC368A43B71F27168 /* PrivateSymbolWithLocalizations.swift */; };
+		D9FE12163BFAE3B2FB832A51 /* SFSymbol+AllSymbols+7.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BAF26F9D04BB2EEF92C5B /* SFSymbol+AllSymbols+7.1.swift */; };
 		DA8F8C532E7F33E2001DD4B4 /* Tab+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F8C522E7F33E2001DD4B4 /* Tab+SFSymbol.swift */; };
 		DA8F8C552E7F4518001DD4B4 /* SwiftUITabExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F8C542E7F4518001DD4B4 /* SwiftUITabExtensionTests.swift */; };
+		DC080ED89F83426283A97E19 /* SFSymbol+8.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE68BFBAF35AEF480AF8F59 /* SFSymbol+8.0.swift */; };
+		F07BEB878DC060FD8E82932F /* LockWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2A3715123781D8B7E6D43 /* LockWrapper.swift */; };
 		F4917B9A2CB40F590028171F /* SFSymbol+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B992CB40F590028171F /* SFSymbol+6.0.swift */; };
 		F4917B9B2CB40F590028171F /* SFSymbol+5.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B982CB40F590028171F /* SFSymbol+5.4.swift */; };
 		F4917B9E2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B9C2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift */; };
 		F4917B9F2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4917B9D2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift */; };
+		F77692812DBECC43ACEABF9E /* SFPrivateSymbol+AllSymbols+8.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4523FF9D1AB4807A2FA7E9C /* SFPrivateSymbol+AllSymbols+8.3.swift */; };
+		F8C55B3CB65CA1764BBD6A01 /* SFPrivateSymbol+1.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846151521532F00AAB729D3C /* SFPrivateSymbol+1.0.swift */; };
+		FA3782AEEF1DADEC7148ED7C /* Image+SFPrivateSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9502EB2CE107A8688BCF63 /* Image+SFPrivateSymbol.swift */; };
+		FB5A4443081C001B9E9D0143 /* SFPrivateSymbol+AllSymbols+2.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E37F812D72CD38B98D280F /* SFPrivateSymbol+AllSymbols+2.0.swift */; };
+		FD3FD6703F8316018FC6BFE1 /* SFPrivateSymbol+AllSymbols+7.0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034316C5A28DE859D930549C /* SFPrivateSymbol+AllSymbols+7.0.swift */; };
+		FD6DECF73E6154ECA7909D80 /* PrivateSymbolResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F778BDB2A72EA44312D656 /* PrivateSymbolResolver.swift */; };
+		FE4810AEC4EF84725469E416 /* SFSymbol+AllSymbols+8.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B4B0A3CE7C87685F855DA /* SFSymbol+AllSymbols+8.3.swift */; };
 		OBJ_64 /* SFSafeSymbols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SFSafeSymbols::SFSafeSymbols::Product" /* SFSafeSymbols.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		289A3ADBE6F71294F5F97DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "SFSafeSymbols::SFSafeSymbols";
+			remoteInfo = SFSafeSymbols;
+		};
+		31096E1546EF1BA999201AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB0F78CAD02ACC14E5B6CB38;
+			remoteInfo = SFSafeSymbolsPrivate;
+		};
 		CCAD3EDE23BFCC360047F583 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -101,6 +181,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010B48B0EB4BECD9E2292F87 /* SFSymbol+AllSymbols+8.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+8.0.swift"; sourceTree = "<group>"; };
+		0304D193021F6EC437C0A1DF /* SFPrivateSymbol+5.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+5.1.swift"; sourceTree = "<group>"; };
+		034316C5A28DE859D930549C /* SFPrivateSymbol+AllSymbols+7.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+7.0.swift"; sourceTree = "<group>"; };
+		058161515425136FEF7A79D0 /* SFPrivateSymbol+AllSymbols+8.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+8.2.swift"; sourceTree = "<group>"; };
+		0D2D38146797268F567EDF7D /* SFSymbol+AllSymbols+8.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+8.2.swift"; sourceTree = "<group>"; };
+		1022D73E9970551ACE3FE28A /* SFPrivateSymbol+4.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+4.0.swift"; sourceTree = "<group>"; };
+		11799F6A7F50E2CC443D92AA /* SFPrivateSymbol+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+3.0.swift"; sourceTree = "<group>"; };
+		139A86582AD616AC2A638A97 /* SFPrivateSymbol+5.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+5.0.swift"; sourceTree = "<group>"; };
+		14196E504DCA987ACC99C62A /* SFPrivateSymbol+6.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+6.1.swift"; sourceTree = "<group>"; };
+		1A43F098C20EF8041BE37435 /* SFPrivateSymbol+6.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+6.0.swift"; sourceTree = "<group>"; };
+		211D919A735F624C1F77385C /* SFPrivateSymbol+AllSymbols+6.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+6.3.swift"; sourceTree = "<group>"; };
+		230BAF26F9D04BB2EEF92C5B /* SFSymbol+AllSymbols+7.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+7.1.swift"; sourceTree = "<group>"; };
+		294C99A6A6310256ACCEC5C8 /* SFPrivateSymbol+6.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+6.3.swift"; sourceTree = "<group>"; };
+		2A79A179E74057B0220D3E37 /* SFPrivateSymbol+7.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+7.1.swift"; sourceTree = "<group>"; };
+		2AB8C071D6E8BC77822F76B8 /* SFPrivateSymbol+7.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+7.0.swift"; sourceTree = "<group>"; };
+		2AC03056469A6DAF6956DD3E /* SFSymbol+8.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+8.2.swift"; sourceTree = "<group>"; };
+		314A5BED41C499CC9874E7F9 /* SFPrivateSymbol+6.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+6.2.swift"; sourceTree = "<group>"; };
+		31CC0FFEE257A9EBD825BD34 /* SFPrivateSymbol+AllSymbols+6.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+6.0.swift"; sourceTree = "<group>"; };
+		337991FCD86BAFC5D520DC55 /* SFPrivateSymbol+5.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+5.2.swift"; sourceTree = "<group>"; };
+		3A3E081CE736B76151EE6CB2 /* SFPrivateSymbol+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+3.3.swift"; sourceTree = "<group>"; };
+		479CEDCB8E39C8A750F91BB2 /* SFPrivateSymbol+AllSymbols+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+1.1.swift"; sourceTree = "<group>"; };
+		4AA1EF615FF3AEAAE0CF965E /* SFPrivateSymbol+AllSymbols+6.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+6.1.swift"; sourceTree = "<group>"; };
+		4F32F818F46B0242FFEB517E /* PrivateSymbolTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivateSymbolTests.swift; sourceTree = "<group>"; };
+		57F7E876E822568A2EE3F553 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		586C4F6456089BDF3850C93C /* SFPrivateSymbol+AllSymbols+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+1.0.swift"; sourceTree = "<group>"; };
+		5ABB2D8EDF797328BF285B63 /* SFPrivateSymbol+8.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+8.2.swift"; sourceTree = "<group>"; };
+		5AFE10C22F0B000100A1B2C3 /* LockWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockWrapper.swift; sourceTree = "<group>"; };
+		5CDD2D122820FF9A7BF333C4 /* SFPrivateSymbol+AllSymbols+4.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+4.0.swift"; sourceTree = "<group>"; };
+		6232C425451F438000DA5D1C /* SFPrivateSymbol+AllSymbols+4.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+4.1.swift"; sourceTree = "<group>"; };
 		636A46AB28002816007E6028 /* SFSymbol+AllSymbols+1.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+1.0.swift"; sourceTree = "<group>"; };
 		636A46AC28002817007E6028 /* SFSymbol+2.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+2.1.swift"; sourceTree = "<group>"; };
 		636A46AD28002817007E6028 /* SFSymbol+2.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+2.0.swift"; sourceTree = "<group>"; };
@@ -118,20 +227,34 @@
 		636A46B928002819007E6028 /* SFSymbol+AllSymbols+2.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+2.1.swift"; sourceTree = "<group>"; };
 		636A46BA28002819007E6028 /* SFSymbol+AllSymbols+2.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+2.0.swift"; sourceTree = "<group>"; };
 		636EBFD327EB2ABC005CFF4C /* SymbolWithLocalizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolWithLocalizations.swift; sourceTree = "<group>"; };
+		6458453009619CC243E619A7 /* SFPrivateSymbol+AllSymbols+3.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+3.3.swift"; sourceTree = "<group>"; };
+		6692B3E15EAC9995FCE57674 /* SFPrivateSymbol+4.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+4.2.swift"; sourceTree = "<group>"; };
+		674468D309FEA60E4495D406 /* SFPrivateSymbol+8.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+8.3.swift"; sourceTree = "<group>"; };
+		6B03E8CCC368A43B71F27168 /* PrivateSymbolWithLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivateSymbolWithLocalizations.swift; sourceTree = "<group>"; };
+		6E5D19237E7EFBBE9D9C6AA3 /* PrivateSymbolImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivateSymbolImage.swift; sourceTree = "<group>"; };
+		74F82288D805204B00BC102A /* NSImage+SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSImage+SFPrivateSymbol.swift"; sourceTree = "<group>"; };
+		7817FA1F3D92A2305478668E /* SFPrivateSymbol+AllSymbols+7.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+7.1.swift"; sourceTree = "<group>"; };
+		7DB689251D324600B6E85E73 /* Label+SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Label+SFPrivateSymbol.swift"; sourceTree = "<group>"; };
+		7FE68BFBAF35AEF480AF8F59 /* SFSymbol+8.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+8.0.swift"; sourceTree = "<group>"; };
+		80A70005B5701E76AD1E074C /* UIImage+SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+SFPrivateSymbol.swift"; sourceTree = "<group>"; };
+		846151521532F00AAB729D3C /* SFPrivateSymbol+1.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+1.0.swift"; sourceTree = "<group>"; };
+		871DD8690ED5C09F0EFAABE9 /* SFPrivateSymbol+AllSymbols+5.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+5.3.swift"; sourceTree = "<group>"; };
+		8F95C844D4B4F58DF7D649EA /* SFPrivateSymbol+AllSymbols+4.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+4.2.swift"; sourceTree = "<group>"; };
 		949BD15C2B74155100A10AB7 /* SwiftUIButtonExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIButtonExtensionTests.swift; sourceTree = "<group>"; };
 		949BD15E2B74156800A10AB7 /* Button+SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+SFSymbol.swift"; sourceTree = "<group>"; };
+		9B5F53BEA3BFC554B926ECD6 /* SFPrivateSymbol+AllSymbols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols.swift"; sourceTree = "<group>"; };
+		9DE11D52D6350CFF2C73F277 /* SFPrivateSymbol+6.4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+6.4.swift"; sourceTree = "<group>"; };
+		9E6C81432C8E3CFBDDBB63E6 /* SFPrivateSymbol+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+2.0.swift"; sourceTree = "<group>"; };
+		9EDAE53D0539AF88C895F699 /* SFPrivateSymbol+5.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+5.3.swift"; sourceTree = "<group>"; };
+		A439BFB9E1BAFFBE023B517A /* SFPrivateSymbol+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+2.1.swift"; sourceTree = "<group>"; };
 		A43C044B2E14796600BD5E45 /* SFSymbol+6.3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.3.swift"; sourceTree = "<group>"; };
 		A43C044C2E14796600BD5E45 /* SFSymbol+6.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.4.swift"; sourceTree = "<group>"; };
 		A43C044D2E14796600BD5E45 /* SFSymbol+7.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+7.0.swift"; sourceTree = "<group>"; };
-		D1365802CD8560750B0DC799 /* SFSymbol+7.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+7.1.swift"; sourceTree = "<group>"; };
-		7FE68BFBAF35AEF480AF8F59 /* SFSymbol+8.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+8.0.swift"; sourceTree = "<group>"; };
-		2AC03056469A6DAF6956DD3E /* SFSymbol+8.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+8.2.swift"; sourceTree = "<group>"; };
 		A43C04512E14798800BD5E45 /* SFSymbol+AllSymbols+6.3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+6.3.swift"; sourceTree = "<group>"; };
 		A43C04522E14798800BD5E45 /* SFSymbol+AllSymbols+6.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+6.4.swift"; sourceTree = "<group>"; };
 		A43C04532E14798800BD5E45 /* SFSymbol+AllSymbols+7.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+7.0.swift"; sourceTree = "<group>"; };
-		230BAF26F9D04BB2EEF92C5B /* SFSymbol+AllSymbols+7.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+7.1.swift"; sourceTree = "<group>"; };
-		010B48B0EB4BECD9E2292F87 /* SFSymbol+AllSymbols+8.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+8.0.swift"; sourceTree = "<group>"; };
-		0D2D38146797268F567EDF7D /* SFSymbol+AllSymbols+8.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+8.2.swift"; sourceTree = "<group>"; };
+		AA97F0DFF89FEC3B68EDD6A7 /* SFPrivateSymbol+AllSymbols+3.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+3.0.swift"; sourceTree = "<group>"; };
+		ADA8B127021D00BDDED6BFC5 /* SFPrivateSymbol+AllSymbols+5.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+5.2.swift"; sourceTree = "<group>"; };
 		B0031A442D6945720040002B /* SFSymbol+6.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.1.swift"; sourceTree = "<group>"; };
 		B0031A452D6945720040002B /* SFSymbol+6.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.2.swift"; sourceTree = "<group>"; };
 		B0031A462D6945720040002B /* SFSymbol+AllSymbols+6.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+6.1.swift"; sourceTree = "<group>"; };
@@ -160,10 +283,15 @@
 		B0B851FE2C1DC9B000E87F17 /* SFSymbol+AllSymbols+5.3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+5.3.swift"; sourceTree = "<group>"; };
 		B0B851FF2C1DC9B000E87F17 /* SFSymbol+5.3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+5.3.swift"; sourceTree = "<group>"; };
 		B0DDAE112637BF3300081F1C /* CodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTests.swift; sourceTree = "<group>"; };
+		B4523FF9D1AB4807A2FA7E9C /* SFPrivateSymbol+AllSymbols+8.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+8.3.swift"; sourceTree = "<group>"; };
+		B7F778BDB2A72EA44312D656 /* PrivateSymbolResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivateSymbolResolver.swift; sourceTree = "<group>"; };
+		B94910DBA8EC5DE5B53CEF5A /* SFPrivateSymbol+AllSymbols+5.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+5.0.swift"; sourceTree = "<group>"; };
+		BF2CF18AB1FB4965F214C9DC /* SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SFPrivateSymbol.swift; sourceTree = "<group>"; };
+		C123CCEC9A517F016F1F34E2 /* SFPrivateSymbol+AllSymbols+6.4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+6.4.swift"; sourceTree = "<group>"; };
+		C6A942E564CE0F80D5380696 /* SFPrivateSymbol+4.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+4.1.swift"; sourceTree = "<group>"; };
 		CC1D812E27F758D200CACDC7 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		CCA29C3B285B4E9400133245 /* SFSymbol+AllSymbols+4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+4.0.swift"; sourceTree = "<group>"; };
 		CCA29C3C285B4E9400133245 /* SFSymbol+4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSymbol+4.0.swift"; sourceTree = "<group>"; };
-		5AFE10C22F0B000100A1B2C3 /* LockWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockWrapper.swift; sourceTree = "<group>"; };
 		CCCCCFE5252F61E700C7CE9F /* SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 		CCCCCFE8252F61E700C7CE9F /* Image+SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+SFSymbol.swift"; sourceTree = "<group>"; };
 		CCCCCFE9252F61E700C7CE9F /* UIApplicationShortcutIcon+SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplicationShortcutIcon+SFSymbol.swift"; sourceTree = "<group>"; };
@@ -175,12 +303,30 @@
 		CCCCD015252F622B00C7CE9F /* UIImageExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensionTests.swift; sourceTree = "<group>"; };
 		CCCCD046252F632600C7CE9F /* NSImage+SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+SFSymbol.swift"; sourceTree = "<group>"; };
 		CCCCD055252F7F7F00C7CE9F /* NSImageExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensionTests.swift; sourceTree = "<group>"; };
+		CD2CFABC6E35DBCF3371ABEB /* SFPrivateSymbol+8.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+8.0.swift"; sourceTree = "<group>"; };
+		D1365802CD8560750B0DC799 /* SFSymbol+7.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+7.1.swift"; sourceTree = "<group>"; };
+		D502EA96C52C9B56D7D7651E /* SFSymbol+8.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFSymbol+8.3.swift"; sourceTree = "<group>"; };
+		D8B39B8B0725EDA3F6779718 /* SFPrivateSymbol+AllSymbols+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+3.1.swift"; sourceTree = "<group>"; };
 		DA8F8C522E7F33E2001DD4B4 /* Tab+SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab+SFSymbol.swift"; sourceTree = "<group>"; };
 		DA8F8C542E7F4518001DD4B4 /* SwiftUITabExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITabExtensionTests.swift; sourceTree = "<group>"; };
+		DDC2A3715123781D8B7E6D43 /* LockWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LockWrapper.swift; sourceTree = "<group>"; };
+		E0136077FBC9F2DBDFA91F8D /* SFPrivateSymbol+1.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+1.1.swift"; sourceTree = "<group>"; };
+		E30E68A5B7545B4618FBAFE0 /* SFPrivateSymbol+AllSymbols+2.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+2.1.swift"; sourceTree = "<group>"; };
+		E58A56E2A90E3A988E6EB091 /* SFSafeSymbolsPrivateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFSafeSymbolsPrivateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E748A02BE400A81E3C377208 /* Button+SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Button+SFPrivateSymbol.swift"; sourceTree = "<group>"; };
+		E8DA27C22FE1134915B120DE /* SFPrivateSymbol+AllSymbols+5.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+5.1.swift"; sourceTree = "<group>"; };
+		E9E37F812D72CD38B98D280F /* SFPrivateSymbol+AllSymbols+2.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+2.0.swift"; sourceTree = "<group>"; };
+		EF9502EB2CE107A8688BCF63 /* Image+SFPrivateSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Image+SFPrivateSymbol.swift"; sourceTree = "<group>"; };
+		F18B4B0A3CE7C87685F855DA /* SFSymbol+AllSymbols+8.3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+8.3.swift"; sourceTree = "<group>"; };
 		F4917B982CB40F590028171F /* SFSymbol+5.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+5.4.swift"; sourceTree = "<group>"; };
 		F4917B992CB40F590028171F /* SFSymbol+6.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+6.0.swift"; sourceTree = "<group>"; };
 		F4917B9C2CB40F7F0028171F /* SFSymbol+AllSymbols+5.4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+5.4.swift"; sourceTree = "<group>"; };
 		F4917B9D2CB40F7F0028171F /* SFSymbol+AllSymbols+6.0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFSymbol+AllSymbols+6.0.swift"; sourceTree = "<group>"; };
+		F56C20CDE2E053FABCE40514 /* SFPrivateSymbol+3.1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+3.1.swift"; sourceTree = "<group>"; };
+		F5B1C61B4E368F1B0F181FDF /* SFPrivateSymbol+AllSymbols+8.0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+8.0.swift"; sourceTree = "<group>"; };
+		FC1F84D6B0AC838D3B523E58 /* SFSafeSymbolsPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSafeSymbolsPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71C29DBA9830C96B8B3828 /* SFPrivateSymbol+AllSymbols+6.2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SFPrivateSymbol+AllSymbols+6.2.swift"; sourceTree = "<group>"; };
+		FF0CBCBB0F7A42F2BC3E511F /* PrivateSymbolLocalizations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivateSymbolLocalizations.swift; sourceTree = "<group>"; };
 		OBJ_26 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		OBJ_27 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_29 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -193,6 +339,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8863CDC415E2450598A3BB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC4AFF547D68B80348C81D7 /* SFSafeSymbolsPrivate.framework in Frameworks */,
+				44AB65FF103B74CC186F0DF5 /* SFSafeSymbols.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F465F8F235722D77885DBEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CA603A4849A07A0C970885 /* SFSafeSymbols.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -211,14 +374,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96244F11253F15B700253B88 /* SFSafeSymbols */ = {
+		067A0739865C3B57548BC608 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				5AFE10C32F0B000100A1B2C3 /* Helpers */,
-				CCCCCFE6252F61E700C7CE9F /* Initializers */,
-				CCCCCFE4252F61E700C7CE9F /* Symbols */,
+				E748A02BE400A81E3C377208 /* Button+SFPrivateSymbol.swift */,
+				EF9502EB2CE107A8688BCF63 /* Image+SFPrivateSymbol.swift */,
+				7DB689251D324600B6E85E73 /* Label+SFPrivateSymbol.swift */,
 			);
-			path = SFSafeSymbols;
+			name = SwiftUI;
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		355FBB67CA61F83E3B2D7799 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				80A70005B5701E76AD1E074C /* UIImage+SFPrivateSymbol.swift */,
+			);
+			name = UIKit;
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4A45C00FBB8670D28AEF5F0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2A3715123781D8B7E6D43 /* LockWrapper.swift */,
+				6E5D19237E7EFBBE9D9C6AA3 /* PrivateSymbolImage.swift */,
+				B7F778BDB2A72EA44312D656 /* PrivateSymbolResolver.swift */,
+			);
+			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		5AFE10C32F0B000100A1B2C3 /* Helpers */ = {
@@ -227,6 +411,95 @@
 				5AFE10C22F0B000100A1B2C3 /* LockWrapper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		60F38BE43327598BDAF7C413 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				57F7E876E822568A2EE3F553 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		626D74F5C4EE9E18C4F0C650 /* SFSafeSymbolsPrivate */ = {
+			isa = PBXGroup;
+			children = (
+				4A45C00FBB8670D28AEF5F0E /* Helpers */,
+				D47A716B567081372FEA4A55 /* Initializers */,
+				84A4D95A7490553A8058031E /* Symbols */,
+			);
+			name = SFSafeSymbolsPrivate;
+			path = SFSafeSymbolsPrivate;
+			sourceTree = "<group>";
+		};
+		84A4D95A7490553A8058031E /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBCBB0F7A42F2BC3E511F /* PrivateSymbolLocalizations.swift */,
+				6B03E8CCC368A43B71F27168 /* PrivateSymbolWithLocalizations.swift */,
+				846151521532F00AAB729D3C /* SFPrivateSymbol+1.0.swift */,
+				E0136077FBC9F2DBDFA91F8D /* SFPrivateSymbol+1.1.swift */,
+				9E6C81432C8E3CFBDDBB63E6 /* SFPrivateSymbol+2.0.swift */,
+				A439BFB9E1BAFFBE023B517A /* SFPrivateSymbol+2.1.swift */,
+				11799F6A7F50E2CC443D92AA /* SFPrivateSymbol+3.0.swift */,
+				F56C20CDE2E053FABCE40514 /* SFPrivateSymbol+3.1.swift */,
+				3A3E081CE736B76151EE6CB2 /* SFPrivateSymbol+3.3.swift */,
+				1022D73E9970551ACE3FE28A /* SFPrivateSymbol+4.0.swift */,
+				C6A942E564CE0F80D5380696 /* SFPrivateSymbol+4.1.swift */,
+				6692B3E15EAC9995FCE57674 /* SFPrivateSymbol+4.2.swift */,
+				139A86582AD616AC2A638A97 /* SFPrivateSymbol+5.0.swift */,
+				0304D193021F6EC437C0A1DF /* SFPrivateSymbol+5.1.swift */,
+				337991FCD86BAFC5D520DC55 /* SFPrivateSymbol+5.2.swift */,
+				9EDAE53D0539AF88C895F699 /* SFPrivateSymbol+5.3.swift */,
+				1A43F098C20EF8041BE37435 /* SFPrivateSymbol+6.0.swift */,
+				14196E504DCA987ACC99C62A /* SFPrivateSymbol+6.1.swift */,
+				314A5BED41C499CC9874E7F9 /* SFPrivateSymbol+6.2.swift */,
+				294C99A6A6310256ACCEC5C8 /* SFPrivateSymbol+6.3.swift */,
+				9DE11D52D6350CFF2C73F277 /* SFPrivateSymbol+6.4.swift */,
+				2AB8C071D6E8BC77822F76B8 /* SFPrivateSymbol+7.0.swift */,
+				2A79A179E74057B0220D3E37 /* SFPrivateSymbol+7.1.swift */,
+				CD2CFABC6E35DBCF3371ABEB /* SFPrivateSymbol+8.0.swift */,
+				5ABB2D8EDF797328BF285B63 /* SFPrivateSymbol+8.2.swift */,
+				674468D309FEA60E4495D406 /* SFPrivateSymbol+8.3.swift */,
+				586C4F6456089BDF3850C93C /* SFPrivateSymbol+AllSymbols+1.0.swift */,
+				479CEDCB8E39C8A750F91BB2 /* SFPrivateSymbol+AllSymbols+1.1.swift */,
+				E9E37F812D72CD38B98D280F /* SFPrivateSymbol+AllSymbols+2.0.swift */,
+				E30E68A5B7545B4618FBAFE0 /* SFPrivateSymbol+AllSymbols+2.1.swift */,
+				AA97F0DFF89FEC3B68EDD6A7 /* SFPrivateSymbol+AllSymbols+3.0.swift */,
+				D8B39B8B0725EDA3F6779718 /* SFPrivateSymbol+AllSymbols+3.1.swift */,
+				6458453009619CC243E619A7 /* SFPrivateSymbol+AllSymbols+3.3.swift */,
+				5CDD2D122820FF9A7BF333C4 /* SFPrivateSymbol+AllSymbols+4.0.swift */,
+				6232C425451F438000DA5D1C /* SFPrivateSymbol+AllSymbols+4.1.swift */,
+				8F95C844D4B4F58DF7D649EA /* SFPrivateSymbol+AllSymbols+4.2.swift */,
+				B94910DBA8EC5DE5B53CEF5A /* SFPrivateSymbol+AllSymbols+5.0.swift */,
+				E8DA27C22FE1134915B120DE /* SFPrivateSymbol+AllSymbols+5.1.swift */,
+				ADA8B127021D00BDDED6BFC5 /* SFPrivateSymbol+AllSymbols+5.2.swift */,
+				871DD8690ED5C09F0EFAABE9 /* SFPrivateSymbol+AllSymbols+5.3.swift */,
+				31CC0FFEE257A9EBD825BD34 /* SFPrivateSymbol+AllSymbols+6.0.swift */,
+				4AA1EF615FF3AEAAE0CF965E /* SFPrivateSymbol+AllSymbols+6.1.swift */,
+				FC71C29DBA9830C96B8B3828 /* SFPrivateSymbol+AllSymbols+6.2.swift */,
+				211D919A735F624C1F77385C /* SFPrivateSymbol+AllSymbols+6.3.swift */,
+				C123CCEC9A517F016F1F34E2 /* SFPrivateSymbol+AllSymbols+6.4.swift */,
+				034316C5A28DE859D930549C /* SFPrivateSymbol+AllSymbols+7.0.swift */,
+				7817FA1F3D92A2305478668E /* SFPrivateSymbol+AllSymbols+7.1.swift */,
+				F5B1C61B4E368F1B0F181FDF /* SFPrivateSymbol+AllSymbols+8.0.swift */,
+				058161515425136FEF7A79D0 /* SFPrivateSymbol+AllSymbols+8.2.swift */,
+				B4523FF9D1AB4807A2FA7E9C /* SFPrivateSymbol+AllSymbols+8.3.swift */,
+				9B5F53BEA3BFC554B926ECD6 /* SFPrivateSymbol+AllSymbols.swift */,
+				BF2CF18AB1FB4965F214C9DC /* SFPrivateSymbol.swift */,
+			);
+			name = Symbols;
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		96244F11253F15B700253B88 /* SFSafeSymbols */ = {
+			isa = PBXGroup;
+			children = (
+				5AFE10C32F0B000100A1B2C3 /* Helpers */,
+				CCCCCFE6252F61E700C7CE9F /* Initializers */,
+				CCCCCFE4252F61E700C7CE9F /* Symbols */,
+			);
+			path = SFSafeSymbols;
 			sourceTree = "<group>";
 		};
 		B0031A542D6A166E0040002B /* AppIntents */ = {
@@ -254,6 +527,23 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		C1BC131D4B19839DE52F0943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60F38BE43327598BDAF7C413 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBD2719BAA909909CFBA8DA1 /* SFSafeSymbolsPrivateTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F32F818F46B0242FFEB517E /* PrivateSymbolTests.swift */,
+			);
+			name = SFSafeSymbolsPrivateTests;
+			path = SFSafeSymbolsPrivateTests;
+			sourceTree = "<group>";
+		};
 		CC1D813027F758D900CACDC7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				96244F11253F15B700253B88 /* SFSafeSymbols */,
+				626D74F5C4EE9E18C4F0C650 /* SFSafeSymbolsPrivate */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -342,6 +633,8 @@
 				010B48B0EB4BECD9E2292F87 /* SFSymbol+AllSymbols+8.0.swift */,
 				0D2D38146797268F567EDF7D /* SFSymbol+AllSymbols+8.2.swift */,
 				636A46AF28002817007E6028 /* SymbolLocalizations.swift */,
+				D502EA96C52C9B56D7D7651E /* SFSymbol+8.3.swift */,
+				F18B4B0A3CE7C87685F855DA /* SFSymbol+AllSymbols+8.3.swift */,
 			);
 			path = Symbols;
 			sourceTree = "<group>";
@@ -383,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA564F525F95CA300429C7B /* SFSafeSymbolsTests */,
+				CBD2719BAA909909CFBA8DA1 /* SFSafeSymbolsPrivateTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -438,11 +732,33 @@
 			path = AppKit;
 			sourceTree = "<group>";
 		};
+		D47A716B567081372FEA4A55 /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				D88A3318C0F353702F811C88 /* AppKit */,
+				067A0739865C3B57548BC608 /* SwiftUI */,
+				355FBB67CA61F83E3B2D7799 /* UIKit */,
+			);
+			name = Initializers;
+			path = Initializers;
+			sourceTree = "<group>";
+		};
+		D88A3318C0F353702F811C88 /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				74F82288D805204B00BC102A /* NSImage+SFPrivateSymbol.swift */,
+			);
+			name = AppKit;
+			path = AppKit;
+			sourceTree = "<group>";
+		};
 		OBJ_22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SFSafeSymbols::SFSafeSymbols::Product" /* SFSafeSymbols.framework */,
 				"SFSafeSymbols::SFSafeSymbolsTests::Product" /* SFSafeSymbolsTests.xctest */,
+				FC1F84D6B0AC838D3B523E58 /* SFSafeSymbolsPrivate.framework */,
+				E58A56E2A90E3A988E6EB091 /* SFSafeSymbolsPrivateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -455,6 +771,7 @@
 				CCCCD010252F622B00C7CE9F /* Tests */,
 				OBJ_22 /* Products */,
 				CCCCD023252F625100C7CE9F /* Root Files */,
+				C1BC131D4B19839DE52F0943 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -462,7 +779,54 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D0ACB9AABA78DD5ADC01F640 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		EC3BDA4A170022C089370EBE /* SFSafeSymbolsPrivateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690543D15195F5FFE841006B /* Build configuration list for PBXNativeTarget "SFSafeSymbolsPrivateTests" */;
+			buildPhases = (
+				E8262C0C097FC81A4E89FC47 /* Sources */,
+				8863CDC415E2450598A3BB30 /* Frameworks */,
+				4B464F9003042592710EE8B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC09A55DD927EA8FD98BE2C9 /* PBXTargetDependency */,
+			);
+			name = SFSafeSymbolsPrivateTests;
+			productName = SFSafeSymbolsPrivateTests;
+			productReference = E58A56E2A90E3A988E6EB091 /* SFSafeSymbolsPrivateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB0F78CAD02ACC14E5B6CB38 /* SFSafeSymbolsPrivate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EC38F1E5C7AF73EA3735F5F /* Build configuration list for PBXNativeTarget "SFSafeSymbolsPrivate" */;
+			buildPhases = (
+				D0ACB9AABA78DD5ADC01F640 /* Headers */,
+				547C699A412BA2FC04ED586F /* Sources */,
+				F465F8F235722D77885DBEE7 /* Frameworks */,
+				B8E6FBA00E2AAEE83F711A01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F62A2EADC3DE1B89104D4161 /* PBXTargetDependency */,
+			);
+			name = SFSafeSymbolsPrivate;
+			productName = SFSafeSymbolsPrivate;
+			productReference = FC1F84D6B0AC838D3B523E58 /* SFSafeSymbolsPrivate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"SFSafeSymbols::SFSafeSymbols" /* SFSafeSymbols */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_35 /* Build configuration list for PBXNativeTarget "SFSafeSymbols" */;
@@ -519,11 +883,105 @@
 			targets = (
 				"SFSafeSymbols::SFSafeSymbols" /* SFSafeSymbols */,
 				"SFSafeSymbols::SFSafeSymbolsTests" /* SFSafeSymbolsTests */,
+				FB0F78CAD02ACC14E5B6CB38 /* SFSafeSymbolsPrivate */,
+				EC3BDA4A170022C089370EBE /* SFSafeSymbolsPrivateTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4B464F9003042592710EE8B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E6FBA00E2AAEE83F711A01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		547C699A412BA2FC04ED586F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07BEB878DC060FD8E82932F /* LockWrapper.swift in Sources */,
+				A2D7A22C979047EE224DB294 /* PrivateSymbolImage.swift in Sources */,
+				FD6DECF73E6154ECA7909D80 /* PrivateSymbolResolver.swift in Sources */,
+				3F3791C40A9EBA9D696625C2 /* NSImage+SFPrivateSymbol.swift in Sources */,
+				CE9A51580EDB8E78BF5D971F /* Button+SFPrivateSymbol.swift in Sources */,
+				FA3782AEEF1DADEC7148ED7C /* Image+SFPrivateSymbol.swift in Sources */,
+				B930C3D32D8B2D2A8C48BAD0 /* Label+SFPrivateSymbol.swift in Sources */,
+				3F39C995412C4C88415996FF /* UIImage+SFPrivateSymbol.swift in Sources */,
+				9D5F7149812F3E6566CC264D /* PrivateSymbolLocalizations.swift in Sources */,
+				D4D8089BF1B169556CE59A17 /* PrivateSymbolWithLocalizations.swift in Sources */,
+				F8C55B3CB65CA1764BBD6A01 /* SFPrivateSymbol+1.0.swift in Sources */,
+				985EBBF34682559D43A1B51F /* SFPrivateSymbol+1.1.swift in Sources */,
+				307E745D39CEF2D9CD3968DE /* SFPrivateSymbol+2.0.swift in Sources */,
+				A4D7F00CB3843548402A3E11 /* SFPrivateSymbol+2.1.swift in Sources */,
+				12394BC00E01502866420C53 /* SFPrivateSymbol+3.0.swift in Sources */,
+				AF7788CDBFDE253C11EBBC94 /* SFPrivateSymbol+3.1.swift in Sources */,
+				88F987EB0DC53FAD631D5C8D /* SFPrivateSymbol+3.3.swift in Sources */,
+				A16735B148F6FA22A451542D /* SFPrivateSymbol+4.0.swift in Sources */,
+				AC6F36A9F35B3110EBB94C1D /* SFPrivateSymbol+4.1.swift in Sources */,
+				A44C6F0E68FA2A6B8DF24C2F /* SFPrivateSymbol+4.2.swift in Sources */,
+				5DEB5C06083F2C9DF5189160 /* SFPrivateSymbol+5.0.swift in Sources */,
+				C2F5C3D17F6EA2CA203845B5 /* SFPrivateSymbol+5.1.swift in Sources */,
+				C6C5C5D5353A9C4417431A59 /* SFPrivateSymbol+5.2.swift in Sources */,
+				B6CFF78C8DD39FEE01BA3737 /* SFPrivateSymbol+5.3.swift in Sources */,
+				5032A71ECB58831CF678A4F4 /* SFPrivateSymbol+6.0.swift in Sources */,
+				38C774D9ABA9D0322809A916 /* SFPrivateSymbol+6.1.swift in Sources */,
+				0AD2900DB837F9E8B8F87A09 /* SFPrivateSymbol+6.2.swift in Sources */,
+				938A814CCC2EC15ADEA74A72 /* SFPrivateSymbol+6.3.swift in Sources */,
+				7C26A97ED1FB15B624B48D5A /* SFPrivateSymbol+6.4.swift in Sources */,
+				310A2A3350D592A95D25E1EF /* SFPrivateSymbol+7.0.swift in Sources */,
+				07EAAEF4EB6EB01447E17D5B /* SFPrivateSymbol+7.1.swift in Sources */,
+				D3041FFCDE12CC65DF7CFF5A /* SFPrivateSymbol+8.0.swift in Sources */,
+				BF3DEA8DDDFF8569999F9276 /* SFPrivateSymbol+8.2.swift in Sources */,
+				D0E2622C90A86DDECC371659 /* SFPrivateSymbol+8.3.swift in Sources */,
+				015DAA162438E46B1DC46EF2 /* SFPrivateSymbol+AllSymbols+1.0.swift in Sources */,
+				253B5B58C0DD66951A3CEFEE /* SFPrivateSymbol+AllSymbols+1.1.swift in Sources */,
+				FB5A4443081C001B9E9D0143 /* SFPrivateSymbol+AllSymbols+2.0.swift in Sources */,
+				991155E498598844825AE05B /* SFPrivateSymbol+AllSymbols+2.1.swift in Sources */,
+				BC28A4D0A0D5F02E1C8D1B94 /* SFPrivateSymbol+AllSymbols+3.0.swift in Sources */,
+				2B7E04DD9C848E13631CBE53 /* SFPrivateSymbol+AllSymbols+3.1.swift in Sources */,
+				AEEFB3550B3045048D8A5A40 /* SFPrivateSymbol+AllSymbols+3.3.swift in Sources */,
+				6CC79827AC3D491874963F68 /* SFPrivateSymbol+AllSymbols+4.0.swift in Sources */,
+				8ECABC3BC2A9961A885243FE /* SFPrivateSymbol+AllSymbols+4.1.swift in Sources */,
+				4FE0B51F8A1B042581E15639 /* SFPrivateSymbol+AllSymbols+4.2.swift in Sources */,
+				08B7C70D5E41867406292228 /* SFPrivateSymbol+AllSymbols+5.0.swift in Sources */,
+				869FB1EACC0941FDCEEFBCC1 /* SFPrivateSymbol+AllSymbols+5.1.swift in Sources */,
+				C54131F7E102BADE147B3580 /* SFPrivateSymbol+AllSymbols+5.2.swift in Sources */,
+				6EFAC93F3322633FD022853D /* SFPrivateSymbol+AllSymbols+5.3.swift in Sources */,
+				C0FE3B39FF2FBB5E50AA5A86 /* SFPrivateSymbol+AllSymbols+6.0.swift in Sources */,
+				5B7FB0E9EA6D2875E5B67065 /* SFPrivateSymbol+AllSymbols+6.1.swift in Sources */,
+				8494B10C0FEDC8B13E442F38 /* SFPrivateSymbol+AllSymbols+6.2.swift in Sources */,
+				D1F1268B7B64C3CC7F20A48B /* SFPrivateSymbol+AllSymbols+6.3.swift in Sources */,
+				39C2107B088FA74F6449E7C5 /* SFPrivateSymbol+AllSymbols+6.4.swift in Sources */,
+				FD3FD6703F8316018FC6BFE1 /* SFPrivateSymbol+AllSymbols+7.0.swift in Sources */,
+				43F25987336D06CF50CB4729 /* SFPrivateSymbol+AllSymbols+7.1.swift in Sources */,
+				ACB5846B9D1CD39D76AF87A6 /* SFPrivateSymbol+AllSymbols+8.0.swift in Sources */,
+				2499F4026559B9B8040EFE17 /* SFPrivateSymbol+AllSymbols+8.2.swift in Sources */,
+				F77692812DBECC43ACEABF9E /* SFPrivateSymbol+AllSymbols+8.3.swift in Sources */,
+				D160AA09DBA5A8494C7F9C82 /* SFPrivateSymbol+AllSymbols.swift in Sources */,
+				5B9BDFA5B17C101450D0BC6E /* SFPrivateSymbol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8262C0C097FC81A4E89FC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B62B6A9C232CC9A22B8761 /* PrivateSymbolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -595,6 +1053,8 @@
 				636A46C528002819007E6028 /* SFSymbol+AllSymbols.swift in Sources */,
 				CCCCCFF1252F61E700C7CE9F /* UIImage+SFSymbol.swift in Sources */,
 				B01C18712B55D9B300AC4288 /* SFSymbol+5.1.swift in Sources */,
+				CDC77BDA086BA52DBC4FB2A0 /* SFSymbol+8.3.swift in Sources */,
+				FE4810AEC4EF84725469E416 /* SFSymbol+AllSymbols+8.3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +1081,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F62A2EADC3DE1B89104D4161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFSafeSymbols;
+			target = "SFSafeSymbols::SFSafeSymbols" /* SFSafeSymbols */;
+			targetProxy = 289A3ADBE6F71294F5F97DFA /* PBXContainerItemProxy */;
+		};
+		FC09A55DD927EA8FD98BE2C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFSafeSymbolsPrivate;
+			target = FB0F78CAD02ACC14E5B6CB38 /* SFSafeSymbolsPrivate */;
+			targetProxy = 31096E1546EF1BA999201AB4 /* PBXContainerItemProxy */;
+		};
 		OBJ_65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SFSafeSymbols::SFSafeSymbols" /* SFSafeSymbols */;
@@ -629,6 +1101,124 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		61FD03D9EE892BD07D9435A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SFSafeSymbols.xcodeproj/SFSafeSymbols_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SFSafeSymbolsPrivate;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 6.0;
+				TARGET_NAME = SFSafeSymbolsPrivate;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7476D8B105F93D108D3DB106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SFSafeSymbols.xcodeproj/SFSafeSymbolsTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SFSafeSymbolsPrivateTests;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		C5C2952D7F6232A737062A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SFSafeSymbols.xcodeproj/SFSafeSymbolsTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SFSafeSymbolsPrivateTests;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		DBC6F5D9A3064CD834AC2FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SFSafeSymbols.xcodeproj/SFSafeSymbols_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SFSafeSymbolsPrivate;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 6.0;
+				TARGET_NAME = SFSafeSymbolsPrivate;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -803,6 +1393,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0EC38F1E5C7AF73EA3735F5F /* Build configuration list for PBXNativeTarget "SFSafeSymbolsPrivate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC6F5D9A3064CD834AC2FE7 /* Release */,
+				61FD03D9EE892BD07D9435A0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690543D15195F5FFE841006B /* Build configuration list for PBXNativeTarget "SFSafeSymbolsPrivateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C2952D7F6232A737062A03 /* Release */,
+				7476D8B105F93D108D3DB106 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "SFSafeSymbols" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

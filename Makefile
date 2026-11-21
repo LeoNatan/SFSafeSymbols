@@ -1,6 +1,7 @@
 PROJ_DIR := ${CURDIR}
 OUT_DIR := $(PROJ_DIR)/Sources/SFSafeSymbols/Symbols/
-SWIFT_CMD := swift run -c release --package-path SymbolsGenerator SymbolsGenerator $(OUT_DIR)
+PRIVATE_OUT_DIR := $(PROJ_DIR)/Sources/SFSafeSymbolsPrivate/Symbols/
+SWIFT_CMD := swift run -c release --package-path SymbolsGenerator SymbolsGenerator $(OUT_DIR) --private-output-dir $(PRIVATE_OUT_DIR)
 
 # Extract arguments
 ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))

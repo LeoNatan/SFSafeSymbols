@@ -37,6 +37,7 @@
   • <a href="#supported-versions">Supported Versions</a>
   • <a href="#installation">Installation</a>
   • <a href="#usage">Usage</a>
+  • <a href="#private-symbols">Private Symbols</a>
   • <a href="#contributing">Contributing</a>
   • <a href="#license">License</a>
   • <a href="https://github.com/SFSafeSymbols/SFSafeSymbols/issues">Issues</a>
@@ -89,6 +90,10 @@ The following SF Symbols versions are currently supported:
 | 6.3 | 18.4 | 15.4 | 18.4 | 11.4 |
 | 6.4 | 18.5 | 15.5 | 18.5 | 11.5 |
 | 7.0 | 26.0 | 26.0 | 26.0 | 26.0 |
+| 7.1 | 26.1 | 26.1 | 26.1 | 26.1 |
+| 8.0 | 27.0 | 27.0 | 27.0 | 27.0 |
+| 8.2 | 27.2 | 27.2 | 27.2 | 27.2 |
+| 8.3 | 27.3 | 27.3 | 27.3 | 27.3 |
 
 ## Installation
 
@@ -109,6 +114,8 @@ To integrate using the standalone version of Apple's Swift Package Manager, add 
 ```
 
 After specifying `"SFSafeSymbols"` as a dependency of the target in which you want to use it, run `swift package update`.
+
+To also use the system's [private symbols](#private-symbols), add the optional `"SFSafeSymbolsPrivate"` product as well.
 
 ### Carthage
 
@@ -232,6 +239,49 @@ custom_rules:
 You can reduce the size impact of `SFSafeSymbols` on your app even further by adding `-Wl,-no_exported_symbols` to the **Other Linker Flags** (`OTHER_LDFLAGS`) of your app target's Release configuration.
 
 This flag stops your app's executable from exporting any symbols, so before enabling it, check that nothing in your setup needs them.
+
+## Private Symbols
+
+Besides the public symbols, the system has a catalog of private symbols (e. g. `apple.logo.circle.fill`, `xsan` or `airpods.pro.gen3.right.arrow.trianglehead.down.left`), which the `systemName` APIs don't resolve. The optional `SFSafeSymbolsPrivate` product exposes them in the same way as the public ones, through the `SFPrivateSymbol` type:
+
+```swift
+import SFSafeSymbolsPrivate
+
+Image(privateSystemSymbol: .appleLogoCircleFill)
+Image(privateSystemSymbol: .xsan, variableValue: 0.5)
+Label("Xsan", privateSystemSymbol: .xsan)
+Button("Xsan", privateSystemSymbol: .xsan) {}
+Button(LocalizedStringKey("my.text"), privateSystemSymbol: .xsan, role: .cancel) {}
+
+UIImage(privateSystemSymbol: .appleLogoCircleFill)
+UIImage(privateSystemSymbol: .appleLogoCircleFill, withConfiguration: UIImage.SymbolConfiguration(pointSize: 40))
+UIImage(privateSystemSymbol: .appleLogoCircleFill, compatibleWith: traitCollection)
+UIImage(privateSystemSymbol: .appleLogoCircleFill, variableValue: 0.5, configuration: nil)
+
+NSImage(privateSystemSymbol: .appleLogoCircleFill)
+NSImage(privateSystemSymbol: .appleLogoCircleFill, accessibilityDescription: "Apple")
+```
+
+To browse the private symbols, use [SF Private Symbols](https://github.com/LeoNatan/SFPrivateSymbols), a Mac app that looks and works like the SF Symbols app.
+
+The private symbols are documented in code like the public ones (preview image, localizations, layersets), and have the same static and dynamic localization (`SFPrivateSymbol.speakerBluetooth.rtl`, `.localized(to:)`) and `SFPrivateSymbol.allSymbols`.
+
+The images are created through private API:
+
+| Framework | API |
+| --------- | --- |
+| SwiftUI | `Image(_internalSystemName:)` |
+| UIKit | `+[UIImage _systemImageNamed:withConfiguration:allowPrivate:]`, `+[UIImage _systemImageNamed:variableValue:withConfiguration:allowPrivate:]` |
+| AppKit | `+[NSImage imageWithPrivateSystemSymbolName:accessibilityDescription:]`, `+[NSImage imageWithPrivateSystemSymbolName:variableValue:accessibilityDescription:]` |
+
+If a UIKit or AppKit method is missing at runtime, the initializers fall back to the public `systemName` API.
+
+Things to know:
+
+- `SFPrivateSymbol` is a separate type from `SFSymbol`, so a private symbol can't be passed to a `systemSymbol` API, which wouldn't resolve it.
+- Symbols with placeholder names of unreleased products (e. g. `0828E54B965E418AB42353CA91BFBBEE`) aren't included, and neither are private names that were renamed to public symbols (e. g. `arrowtriangle.summary`, now `SFSymbol.textLine2Summary`).
+- The catalog has no information about platforms. A few symbols aren't available on all of them: `ernie.logo`, `qwen.logo` and `tongyi.logo` don't exist on tvOS and watchOS.
+- Creating a `UIImage` or `NSImage` subclass from a private symbol isn't possible, since the system creates the image.
 
 ## Contributing
 

@@ -20,6 +20,20 @@
                ReferencedContainer = "container:SFSafeSymbols.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FB0F78CAD02ACC14E5B6CB38"
+               BuildableName = "SFSafeSymbolsPrivate.framework"
+               BlueprintName = "SFSafeSymbolsPrivate"
+               ReferencedContainer = "container:SFSafeSymbols.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -37,6 +51,16 @@
                BlueprintIdentifier = "SFSafeSymbols::SFSafeSymbolsTests"
                BuildableName = "SFSafeSymbolsTests.xctest"
                BlueprintName = "SFSafeSymbolsTests"
+               ReferencedContainer = "container:SFSafeSymbols.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC3BDA4A170022C089370EBE"
+               BuildableName = "SFSafeSymbolsPrivateTests.xctest"
+               BlueprintName = "SFSafeSymbolsPrivateTests"
                ReferencedContainer = "container:SFSafeSymbols.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -1,11 +1,18 @@
 import Foundation
 
 extension String {
+    /// The keywords that can't be used as identifiers without backticks.
+    private static let swiftKeywords: Set<String> = [
+        "associatedtype", "break", "case", "catch", "class", "continue", "default", "defer", "deinit", "do", "else",
+        "enum", "extension", "fallthrough", "false", "fileprivate", "for", "func", "guard", "if", "import", "in",
+        "init", "inout", "internal", "is", "let", "nil", "operator", "private", "protocol", "public", "repeat",
+        "rethrows", "return", "self", "static", "struct", "subscript", "super", "switch", "throw", "throws", "true",
+        "try", "typealias", "var", "where", "while",
+    ]
+
     var toPropertyName: String {
         // Handle special swift keywords
-        guard self != "return" else { return "`return`" }
-        guard self != "repeat" else { return "`repeat`" }
-        guard self != "case" else { return "`case`" }
+        guard !Self.swiftKeywords.contains(self) else { return "`\(self)`" }
 
         // Perform naming style transformation
         var outputString = ""

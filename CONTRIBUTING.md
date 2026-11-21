@@ -24,12 +24,13 @@ With the current structure of the repository, where **most code is generated** b
 
 1. **Update your Mac to the macOS version that ships the new SF Symbols version.** The generator reads all symbol data from the Mac it runs on, so the generated code matches that Mac's SF Symbols version. No files need to be copied into the repository. The generator loads:
     * `name_availability.plist`, `name_aliases.strings`, `symbol_restrictions.strings` and `symbol_categories.plist` from `/System/Library/CoreServices/CoreGlyphs.bundle/Contents/Resources/`: the symbols with their availability, renames, use restrictions and categories.
+    * The same files (except for `symbol_restrictions.strings`) from `/System/Library/CoreServices/CoreGlyphsPrivate.bundle/Contents/Resources/` for the private symbols of `SFSafeSymbolsPrivate`.
     * The symbols' metadata from the private `/System/Library/PrivateFrameworks/SFSymbols.framework`: the preview glyphs used in the documentation and the layerset availability. The generator accesses it through the module interface and linker stub in `/SymbolsGenerator/PrivateFrameworks`.
-    * The symbol png images from AppKit (`NSImage(systemSymbolName:accessibilityDescription:)`).
+    * The symbol images from AppKit (`NSImage(systemSymbolName:accessibilityDescription:)`, and the private `+[NSImage imageWithPrivateSystemSymbolName:accessibilityDescription:]` for private symbols).
 
     If Apple changes the format of these files, update the parsers in `/SymbolsGenerator/Sources/SymbolsGenerator/Parsers` and `/SymbolsGenerator/Sources/SymbolsGenerator/Helpers/SystemSymbols.swift`.
 2. Open a terminal and change to the root folder of the repository. **Then run `make pr`** (it detects your username and branch from git; use `make pr <username> <branch-name>` to set them explicitly).
-3. If new files are created by the generator tool (which is expected to happen when updating to a new SF Symbols version), make sure they are **added to the `SFSafeSymbols.xcodeproj`**.
+3. If new files are created by the generator tool (which is expected to happen when updating to a new SF Symbols version), make sure they are **added to the `SFSafeSymbols.xcodeproj`**: the files of `Sources/SFSafeSymbols` to the `SFSafeSymbols` target, and those of `Sources/SFSafeSymbolsPrivate` to the `SFSafeSymbolsPrivate` target.
 4. **Update the `README.md`**, so that support for the new SF Symbols version is mentioned there.
 5. **Check the CI configuration** and, if needed, make adjustments (or ask a core contributor to do so), so that the new changes are properly tested with a matching Xcode version.
 

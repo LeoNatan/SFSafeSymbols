@@ -3,7 +3,7 @@
 // 3.3 Symbols
 @available(iOS 15.4, macOS 12.3, tvOS 15.4, watchOS 8.5, visionOS 1.0, *)
 public extension SFSymbol {
-    /// ![􁂂](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/camera.macro.png)\
+    /// ![􁂂](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/camera.macro.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -11,7 +11,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var cameraMacro: SFSymbol { .init("camera.macro") }
 
-    /// ![􁂃](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/camera.macro.circle.png)\
+    /// ![􁂃](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/camera.macro.circle.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -20,7 +20,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var cameraMacroCircle: SFSymbol { .init("camera.macro.circle") }
 
-    /// ![􁂄](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/camera.macro.circle.fill.png)\
+    /// ![􁂄](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/camera.macro.circle.fill.webp)\
     /// Single Localization, 3 Layersets
     ///
     /// Layersets:
@@ -30,7 +30,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var cameraMacroCircleFill: SFSymbol { .init("camera.macro.circle.fill") }
 
-    /// ![􁑢](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/dots.and.line.vertical.and.cursorarrow.rectangle.png)\
+    /// ![􁑢](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/dots.and.line.vertical.and.cursorarrow.rectangle.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -44,7 +44,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var dotsAndLineVerticalAndCursorarrowRectangle: SFSymbol { .init("dots.and.line.vertical.and.cursorarrow.rectangle") }
 
-    /// ![􁎕](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/key.viewfinder.png)\
+    /// ![􁎕](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/key.viewfinder.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -53,7 +53,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var keyViewfinder: SFSymbol { .init("key.viewfinder") }
 
-    /// ![􁏺](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.badge.key.png)\
+    /// ![􁏺](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.badge.key.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:
@@ -64,7 +64,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personBadgeKey: SFSymbol { .init("person.badge.key") }
 
-    /// ![􁎨](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.badge.key.fill.png)\
+    /// ![􁎨](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.badge.key.fill.webp)\
     /// Single Localization, 2 Layersets, ⚠️ Restricted
     ///
     /// Layersets:

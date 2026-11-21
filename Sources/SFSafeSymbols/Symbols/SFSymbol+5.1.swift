@@ -3,7 +3,7 @@
 // 5.1 Symbols
 @available(iOS 17.1, macOS 14.1, tvOS 17.1, watchOS 10.1, visionOS 1.0, *)
 public extension SFSymbol {
-    /// ![􂉏](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/chevron.compact.backward.png)\
+    /// ![􂉏](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/chevron.compact.backward.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -11,7 +11,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var chevronCompactBackward: SFSymbol { .init("chevron.compact.backward") }
 
-    /// ![􂉐](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/chevron.compact.forward.png)\
+    /// ![􂉐](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/chevron.compact.forward.webp)\
     /// Single Localization, Single Layerset
     ///
     /// Layersets:
@@ -19,7 +19,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var chevronCompactForward: SFSymbol { .init("chevron.compact.forward") }
 
-    /// ![􂉚](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.camera.png)\
+    /// ![􂉚](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.camera.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -28,7 +28,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personCropSquareBadgeCamera: SFSymbol { .init("person.crop.square.badge.camera") }
 
-    /// ![􂉛](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.camera.fill.png)\
+    /// ![􂉛](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.camera.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -37,7 +37,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personCropSquareBadgeCameraFill: SFSymbol { .init("person.crop.square.badge.camera.fill") }
 
-    /// ![􂉜](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.video.png)\
+    /// ![􂉜](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.video.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
@@ -46,7 +46,7 @@ public extension SFSymbol {
     @_alwaysEmitIntoClient
     static var personCropSquareBadgeVideo: SFSymbol { .init("person.crop.square.badge.video") }
 
-    /// ![􂉝](https://raw.githubusercontent.com/SFSafeSymbols/SFSafeSymbols/refs/heads/v8/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.video.fill.png)\
+    /// ![􂉝](https://raw.githubusercontent.com/LeoNatan/SFSafeSymbols/refs/heads/private-symbols/Sources/SFSafeSymbols/SymbolImages/person.crop.square.badge.video.fill.webp)\
     /// Single Localization, 2 Layersets
     ///
     /// Layersets:
